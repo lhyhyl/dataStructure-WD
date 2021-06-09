@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\sequenceList">
+      <UniqueIdentifier>{547f09fe-f3bc-4b86-9d23-617ed1c69060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\linkList">
+      <UniqueIdentifier>{1d893ee1-5ca6-4873-84e0-944bd84b3abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\stackAndQueue">
+      <UniqueIdentifier>{a4989d54-2369-4470-a502-fdbe331320e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tree">
+      <UniqueIdentifier>{8e8043cd-aaee-45aa-b1b0-e8b413016831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph">
+      <UniqueIdentifier>{6ac52a9d-49f2-4701-8f7b-7e5fd13c52f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="revertSquence.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="changePos.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="deletePoint.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteRepition.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteX.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="deletMin.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibonacci.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="findMidNum.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="findX.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="loopLeft.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="mergeLists.c">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteXinLink.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteXwithHead.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="reverseOutput.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteMin.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="reverseNow.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="sortLink.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="createLink.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteNum.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="printfNowLink.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="outputLinkAndFree.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="divideOddAndEven.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteRep.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="mergeList.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="findCommon.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="findCommon2.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="subList.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="doubleLoopLinkList.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="createDouLoopLink.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="linkTwoLists.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="createSinLoopLink.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="findMin.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="addFreq.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="findTheReciprocalK.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="findCommonSuffix.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteRepAbs.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="isLoop.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="crossTheLink.cpp">
+      <Filter>源文件\linkList</Filter>
+    </ClCompile>
+    <ClCompile Include="isSymmetry.cpp">
+      <Filter>源文件\stackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="createStack.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shareStack.cpp">
+      <Filter>源文件\stackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="tagQueue.cpp">
+      <Filter>源文件\stackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="createSequentialQueue.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reverseQueue.cpp">
+      <Filter>源文件\stackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="linkQueue.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="matchBracket.cpp">
+      <Filter>源文件\stackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="cul.cpp">
+      <Filter>源文件\stackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="commonAncestor.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="sequenceTree.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkBiTree.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="traverseTree.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="inOrder.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="preOrder.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="postOrder.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="levelOrder.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="levelOrder2.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="highOfBiTree.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="biTreeFromPreAndIn.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="comTree.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="doubleNode.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="swapChild.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="preK.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="delXsub.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="findAllAncestor.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="nearestComAncestor.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="getWidth.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="preToPost.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="leafLink.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="isSimilar.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="linkTreadBiTree.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="findPre.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="WPL.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="inOrderExp.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="frostLeaf.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="highOfTree.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="isSortTree.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="isSortTree2.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="levelInSortTree.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="isBalanceTree.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="findKth.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateGraphInAM.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="createGraphInAL.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trainArrange.cpp">
+      <Filter>源文件\stackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="manageCar.cpp">
+      <Filter>源文件\stackAndQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="isTree.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="ALToAM.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="DFSUseStack.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="DFSInAL.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

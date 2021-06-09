@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{806C54C8-2CAB-4AAE-B089-23D179D74183}</ProjectGuid>
+    <RootNamespace>WDAlgorithm</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="addFreq.cpp" />
+    <ClCompile Include="ALToAM.cpp" />
+    <ClCompile Include="DFSInAL.cpp" />
+    <ClCompile Include="DFSUseStack.cpp" />
+    <ClCompile Include="biTreeFromPreAndIn.cpp" />
+    <ClCompile Include="changePos.c" />
+    <ClCompile Include="commonAncestor.cpp" />
+    <ClCompile Include="comTree.cpp" />
+    <ClCompile Include="createDouLoopLink.cpp" />
+    <ClCompile Include="createGraphInAL.cpp" />
+    <ClCompile Include="CreateGraphInAM.cpp" />
+    <ClCompile Include="findKth.cpp" />
+    <ClCompile Include="createLink.cpp" />
+    <ClCompile Include="createSequentialQueue.cpp" />
+    <ClCompile Include="createSinLoopLink.cpp" />
+    <ClCompile Include="createStack.cpp" />
+    <ClCompile Include="crossTheLink.cpp" />
+    <ClCompile Include="cul.cpp" />
+    <ClCompile Include="deleteMin.cpp" />
+    <ClCompile Include="deleteNum.cpp" />
+    <ClCompile Include="deletePoint.c" />
+    <ClCompile Include="deleteRep.cpp" />
+    <ClCompile Include="deleteRepAbs.cpp" />
+    <ClCompile Include="deleteRepition.c" />
+    <ClCompile Include="deleteX.c" />
+    <ClCompile Include="deleteXinLink.cpp" />
+    <ClCompile Include="deleteXwithHead.cpp" />
+    <ClCompile Include="deletMin.c" />
+    <ClCompile Include="delXsub.cpp" />
+    <ClCompile Include="divideOddAndEven.cpp" />
+    <ClCompile Include="doubleLoopLinkList.cpp" />
+    <ClCompile Include="doubleNode.cpp" />
+    <ClCompile Include="Fibonacci.c" />
+    <ClCompile Include="findAllAncestor.cpp" />
+    <ClCompile Include="findCommon.cpp" />
+    <ClCompile Include="findCommon2.cpp" />
+    <ClCompile Include="findCommonSuffix.cpp" />
+    <ClCompile Include="findMidNum.c" />
+    <ClCompile Include="findMin.cpp" />
+    <ClCompile Include="findPre.cpp" />
+    <ClCompile Include="findTheReciprocalK.cpp" />
+    <ClCompile Include="findX.c" />
+    <ClCompile Include="frostLeaf.cpp" />
+    <ClCompile Include="getWidth.cpp" />
+    <ClCompile Include="highOfBiTree.cpp" />
+    <ClCompile Include="highOfTree.cpp" />
+    <ClCompile Include="inOrder.cpp" />
+    <ClCompile Include="inOrderExp.cpp" />
+    <ClCompile Include="isBalanceTree.cpp" />
+    <ClCompile Include="isLoop.cpp" />
+    <ClCompile Include="isSimilar.cpp" />
+    <ClCompile Include="isSortTree.cpp" />
+    <ClCompile Include="isSortTree2.cpp" />
+    <ClCompile Include="isSymmetry.cpp" />
+    <ClCompile Include="isTree.cpp" />
+    <ClCompile Include="leafLink.cpp" />
+    <ClCompile Include="levelInSortTree.cpp" />
+    <ClCompile Include="levelOrder.cpp" />
+    <ClCompile Include="levelOrder2.cpp" />
+    <ClCompile Include="LinkBiTree.cpp" />
+    <ClCompile Include="linkQueue.cpp" />
+    <ClCompile Include="linkTreadBiTree.cpp" />
+    <ClCompile Include="linkTwoLists.cpp" />
+    <ClCompile Include="loopLeft.c" />
+    <ClCompile Include="manageCar.cpp" />
+    <ClCompile Include="matchBracket.cpp" />
+    <ClCompile Include="mergeList.cpp" />
+    <ClCompile Include="mergeLists.c" />
+    <ClCompile Include="nearestComAncestor.cpp" />
+    <ClCompile Include="outputLinkAndFree.cpp" />
+    <ClCompile Include="postOrder.cpp" />
+    <ClCompile Include="preK.cpp" />
+    <ClCompile Include="preOrder.cpp" />
+    <ClCompile Include="preToPost.cpp" />
+    <ClCompile Include="printfNowLink.cpp" />
+    <ClCompile Include="reverseNow.cpp" />
+    <ClCompile Include="reverseOutput.cpp" />
+    <ClCompile Include="reverseQueue.cpp" />
+    <ClCompile Include="revertSquence.c" />
+    <ClCompile Include="sequenceTree.cpp" />
+    <ClCompile Include="shareStack.cpp" />
+    <ClCompile Include="sortLink.cpp" />
+    <ClCompile Include="subList.cpp" />
+    <ClCompile Include="swapChild.cpp" />
+    <ClCompile Include="tagQueue.cpp" />
+    <ClCompile Include="trainArrange.cpp" />
+    <ClCompile Include="traverseTree.cpp" />
+    <ClCompile Include="WPL.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
