@@ -294,5 +294,11 @@
     <ClCompile Include="DFSInAL.cpp">
       <Filter>源文件\graph</Filter>
     </ClCompile>
+    <ClCompile Include="haveRoute.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="findRoute.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
