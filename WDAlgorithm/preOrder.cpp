@@ -1,8 +1,8 @@
-/*
-	试写出先序遍历（非递归算法）
-	分析：
-		和中序遍历大同小异，唯一的差别在于每次先访问节点，在判断有没有左孩子，有则入栈，然后出栈，往右走。直至栈空
-*/
+///*
+//	试写出先序遍历（非递归算法）
+//	分析：
+//		和中序遍历大同小异，唯一的差别在于每次先访问节点，在判断有没有左孩子，有则入栈，然后出栈，往右走。直至栈空。
+//*/
 //struct biTree {//树的结构体
 //	char data;
 //	struct biTree *lchild;
@@ -15,7 +15,7 @@
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
-//void inOrder(biTree *T, Stack *s) {//中序遍历
+//void preOrder(biTree *T, Stack *s) {//先序遍历
 //	biTree *p = T;
 //	bool empty(Stack *);
 //	bool pushS(Stack *, biTree *);
@@ -47,6 +47,7 @@
 //
 //	s = createStack(count);//创建二叉树节点个数大小的栈
 //
-//	inOrder(T, s);
+//	preOrder(T, s);
 //	return 0;
 //}
+////一名谦虚的学生

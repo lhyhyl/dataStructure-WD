@@ -1,9 +1,9 @@
-/*
-	是写出中序遍历的非递归算法
-	分析：
-		如果采用非递归，我们就需要用到栈这个数据结构了，具体流程为：从根节点一路往下找左孩子并将其入栈直至左孩子为空
-		然后依次出栈，并判断是否存在右孩子，如果有，右孩子入栈，继续往下找左孩子，如此重复直至栈空
-*/
+///*
+//	是写出中序遍历的非递归算法
+//	分析：
+//		如果采用非递归，我们就需要用到栈这个数据结构了，具体流程为：从根节点一路往下找左孩子并将其入栈直至左孩子为空
+//		然后依次出栈，并判断是否存在右孩子，如果有，右孩子入栈，继续往下找左孩子，如此重复直至栈空
+//*/
 //struct biTree {//树的结构体
 //	char data;
 //	struct biTree *lchild;
@@ -36,7 +36,7 @@
 //	}
 //}
 //int main() {
-//	int count=0;
+//	int count=0;//计数器，二叉树节点个数
 //	struct biTree *T = (struct biTree *)malloc(sizeof(struct biTree));
 //	struct Stack *s = (struct Stack*)malloc(sizeof(struct Stack));
 //	biTree *create(biTree*);
