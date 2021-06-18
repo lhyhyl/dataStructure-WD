@@ -43,7 +43,7 @@ bool push(Stack *stack, TYPE data) {
 	return true;
 }
 //ÈëÕ»£¨Ê÷½á¹¹£©
-bool pushS(Stack *stack, biTree* p) {
+bool pushS(Stack *stack, TYPE p) {
 	if (full(stack)) return false;
 	*(stack->arr + ++stack->top) = p;
 	return true;
