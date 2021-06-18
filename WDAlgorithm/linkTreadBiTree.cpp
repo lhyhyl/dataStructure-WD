@@ -5,7 +5,7 @@ struct biTree {
 	char data;
 	struct biTree *lchild;
 	struct biTree *rchild;
-	int ltag, rtag;
+	int ltag, rtag;//用于进行标记
 };
 #include <stdio.h>
 

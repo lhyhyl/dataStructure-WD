@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>
-#define TYPE biTree 
+#define TYPE biTree*
 struct biTree {
 	char data;
 	struct biTree *lchild;
@@ -43,12 +43,9 @@ bool push(Stack *stack, TYPE data) {
 	return true;
 }
 //入栈（树结构）
-bool pushS(Stack *stack, biTree* p) {
+bool pushS(Stack *stack, TYPE p) {
 	if (full(stack)) return false;
-	(stack->arr + ++stack->top)->data = p->data;
-	(stack->arr + stack->top)->lchild = p->lchild;
-	(stack->arr + stack->top)->rchild = p->rchild;
-
+	*(stack->arr + ++stack->top) = p;
 	return true;
 }
 //入栈（递归结构）
@@ -68,9 +65,9 @@ bool pop(Stack *stack) {
 }
 
 //查看栈顶元素
-TYPE *top(Stack *stack) {
+TYPE top(Stack *stack) {
 	if (empty(stack)) return NULL;
-	return stack->arr + stack->top;
+	return *(stack->arr + stack->top);
 }
 
 //销毁

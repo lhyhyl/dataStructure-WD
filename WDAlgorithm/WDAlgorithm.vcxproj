@@ -181,6 +181,7 @@
     <ClCompile Include="isSortTree2.cpp" />
     <ClCompile Include="isSymmetry.cpp" />
     <ClCompile Include="isTree.cpp" />
+    <ClCompile Include="kruskal.cpp" />
     <ClCompile Include="leafLink.cpp" />
     <ClCompile Include="levelInSortTree.cpp" />
     <ClCompile Include="levelOrder.cpp" />
@@ -200,6 +201,8 @@
     <ClCompile Include="preK.cpp" />
     <ClCompile Include="preOrder.cpp" />
     <ClCompile Include="preToPost.cpp" />
+    <ClCompile Include="primInAL.cpp" />
+    <ClCompile Include="primInAM.cpp" />
     <ClCompile Include="printfNowLink.cpp" />
     <ClCompile Include="reverseNow.cpp" />
     <ClCompile Include="reverseOutput.cpp" />

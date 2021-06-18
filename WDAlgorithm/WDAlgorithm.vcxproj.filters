@@ -300,5 +300,14 @@
     <ClCompile Include="findRoute.cpp">
       <Filter>源文件\graph</Filter>
     </ClCompile>
+    <ClCompile Include="primInAL.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="primInAM.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="kruskal.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
