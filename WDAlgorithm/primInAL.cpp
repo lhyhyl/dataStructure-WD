@@ -2,7 +2,7 @@
 //	prim算法(采用邻接表)：
 //		算法核心：
 //				我们设立一个prim数组，用于存储依次加入的顶点，加入的规则便是从已有顶点中寻找权值最小的邻接点，再设立一个二位数组
-//				用于存储两顶点见的权值信息
+//				用于存储两顶点间的权值信息
 //*/
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -40,7 +40,7 @@
 //	int *prims = (int *)malloc(sizeof(int )*G->numV);//创建大小为图顶点个数的数组，用于存储依次加入的顶点
 //	int **weights = (int **)malloc(sizeof(int *)*G->numV);//两点间的权值数据
 //	for (int i = 0; i < G->numV; i++) {
-//		prims[i]=-100;
+//		prims[i]=-1;//初始化为-100，代表没有顶点目前加入
 //	}
 //	for (int i = 0; i < G->numV; i++) {
 //		weights[i] = (int *)malloc(sizeof(int *)*G->numV);
@@ -52,13 +52,13 @@
 //	}
 //	int weight= 32767;//权值数据
 //	int index = 0;
-//	int s;//记录当前找到的最小边的起始顶点和终点
-//	EdgeNode *r=(EdgeNode *)malloc(sizeof(EdgeNode *));
+//	int s;//记录当前找到的最小边的起始顶点
+//	EdgeNode *r=(EdgeNode *)malloc(sizeof(EdgeNode *));//记录当前找到的最小边的终点
 //	prims[index++] = start;//先将start加入prims数组
 //	while (index != G->numV) {//顶点未全部加入prims数组，继续遍历
 //		for (int i = 0; i < index; i++) {//以prims数组中的值为起点找最小边
 //			for (EdgeNode *p = G->adjlist[i].firstEdge; p;p=p->next) {
-//				if (weight > p->weight && !weights[i][p->index]&&prims[p->index]==-100) {
+//				if (weight > p->weight && !weights[i][p->index]&&prims[p->index]==-1) {//权值更小，未加入，终点未访问，则符合条件
 //					weight = p->weight;
 //					r = p;
 //					s = i;

@@ -202,6 +202,7 @@
     <ClCompile Include="preOrder.cpp" />
     <ClCompile Include="preToPost.cpp" />
     <ClCompile Include="primInAL.cpp" />
+    <ClCompile Include="primInAL2.cpp" />
     <ClCompile Include="primInAM.cpp" />
     <ClCompile Include="printfNowLink.cpp" />
     <ClCompile Include="reverseNow.cpp" />
@@ -210,6 +211,7 @@
     <ClCompile Include="revertSquence.c" />
     <ClCompile Include="sequenceTree.cpp" />
     <ClCompile Include="shareStack.cpp" />
+    <ClCompile Include="singleShortestPath.cpp" />
     <ClCompile Include="sortLink.cpp" />
     <ClCompile Include="subList.cpp" />
     <ClCompile Include="swapChild.cpp" />

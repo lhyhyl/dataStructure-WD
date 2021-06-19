@@ -309,5 +309,11 @@
     <ClCompile Include="kruskal.cpp">
       <Filter>源文件\graph</Filter>
     </ClCompile>
+    <ClCompile Include="singleShortestPath.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="primInAL2.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
