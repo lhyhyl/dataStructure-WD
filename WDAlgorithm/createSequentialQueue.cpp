@@ -3,7 +3,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#define TYPE int
+#define TYPE biTree*
 
 struct biTree {
 	char data;

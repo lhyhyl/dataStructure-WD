@@ -5,39 +5,88 @@
 		图的顶点数、边数、用一个二维数组存储的边与边的联系及其权值，未连接的边我们要使用无穷表示，节点自身用0
 		表示，初始时除自身节点外均表示为无穷。另外我们还需要一个一维数组用来存储我们的顶点个数
 */
+#define _CRT_SECURE_NO_WARNINGS
 #define MAXSIZE 100 //数组最大值
+#include <stdio.h>
+#include <stdlib.h>
 typedef struct Graph {
 	char Vertex[MAXSIZE];
 	int Edge[MAXSIZE][MAXSIZE];
 	int numV, numE;//顶点、边数量
 }adjMatrix;
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
 
 void createGraph(adjMatrix *G) {
-	int v, e,vi,vj,w;
+	int v, e, vi, vj, w;
 	printf("请输入创建的图的顶点与边个数（以空格分开）：");
-	scanf("%d %d",&v,&e);
+	scanf("%d %d", &v, &e);
 	G->numE = e;
 	G->numV = v;
 	//初始化图
-	for (int i = 0; i < v;i++) {
-		for (int j = 0; j < v;j++) {
+	for (int i = 0; i < v; i++) {
+		for (int j = 0; j < v; j++) {
 			i == j ? G->Edge[i][j] = 0 : G->Edge[i][j] = 32767;
 		}
 	}
 	//将顶点存入数组
-	for (int i = 0; i < G->numV;i++) {
-		printf("请输入第%d个节点信息：",i+1);
-		scanf("\n%c",&G->Vertex[i]);
+	for (int i = 0; i < G->numV; i++) {
+		printf("请输入第%d个节点信息：", i + 1);
+		scanf("\n%c", &G->Vertex[i]);
 	}
 	//开始建立边与边的关系
-	for (int i = 0; i < G->numE;i++) {
+	for (int i = 0; i < G->numE; i++) {
 		printf("请输入边的信息vi vj w(以空格分开)");
-		scanf("%d %d %d",&vi,&vj,&w);//有权值就写
+		scanf("%d %d %d", &vi, &vj, &w);//有权值就写
 		G->Edge[vi - 1][vj - 1] = w;//①
-		G->Edge[vj - 1][vi - 1] = w;//②   这代表无向图
+		//G->Edge[vj - 1][vi - 1] = w;//②   这代表无向图
 	}
+
+}
+void createGraphFromFile(adjMatrix *G) {
+	FILE *fp;//创建文件指针
+	char ev[4] = { 0 };//顶点，边个数信息
+	char arc[6] = { 0 };//边信息
+	char *vertex;//顶点信息，名称
+	fp = fopen("graph.txt", "r");//打开文件
+	if (fp == NULL) {
+		printf("该文件无法打开！");
+		return;
+	}
+	fgets(ev, 4, fp);//读取第一行
+	//G->numE = atoi(&ev[0]);//因为有空格所以跳着取值
+	G->numE = (int)ev[0] - 48;//因为有空格所以跳着取值
+	//G->numV = atoi(&ev[2]);//用atoi()将字符型数据转化为整型
+	G->numV = (int)ev[2] - 48;//因为有空格所以跳着取值
+
+	//初始化图
+	for (int i = 0; i < G->numV; i++) {
+		for (int j = 0; j < G->numV; j++) {
+			i == j ? G->Edge[i][j] = 0 : G->Edge[i][j] = 32767;
+		}
+	}
+	vertex = (char *)malloc(sizeof(char*)*G->numV);//这是用来存储顶点信息的数组（顶点的名字）
+	for (int i = 0; i <= G->numE; i++) {//开始获取后面的信息
+		if (i == 0) {//此时，根据我们文件的结构，第二行是顶点信息
+			fgets(ev, 4, fp);//获取回车符，上一次fgets后会停在回车符那儿
+			fgets(vertex, G->numV * 2, fp);//这里获取顶点信息
+			int w = 0;//用一个计数器，保证adjlist依次存储顶点
+			for (int j = 0; j < G->numV * 2; j++) {//因为有空格，所以让j<G->numV*2
+				if (vertex[j] == 32) {//是空格，不进行操作
+					continue;
+				}
+				else {//开始赋值
+					G->Vertex[w] = vertex[j];
+					w++;
+				}
+			}
+		}
+		else {//开始依次存储边信息
+			fgets(ev, 4, fp);//同样先吃掉换行符
+			fgets(arc, 6, fp);//读取该行的边信息
+			G->Edge[(int)ev[0] - 48 - 1][(int)ev[2] - 48 - 1] = (int)ev[4] - 48;
+		}
+
+	}
+	fclose(fp);
 
 }
 void dispGraph(adjMatrix *G) {

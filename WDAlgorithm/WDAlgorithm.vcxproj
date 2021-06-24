@@ -135,6 +135,9 @@
     <ClCompile Include="createDouLoopLink.cpp" />
     <ClCompile Include="createGraphInAL.cpp" />
     <ClCompile Include="CreateGraphInAM.cpp" />
+    <ClCompile Include="DijkstraAL.cpp" />
+    <ClCompile Include="DijkstraAM.cpp" />
+    <ClCompile Include="directInsertSort.cpp" />
     <ClCompile Include="findKth.cpp" />
     <ClCompile Include="createLink.cpp" />
     <ClCompile Include="createSequentialQueue.cpp" />
@@ -167,8 +170,11 @@
     <ClCompile Include="findRoute.cpp" />
     <ClCompile Include="findTheReciprocalK.cpp" />
     <ClCompile Include="findX.c" />
+    <ClCompile Include="floydAM.cpp" />
     <ClCompile Include="frostLeaf.cpp" />
+    <ClCompile Include="getHigh.cpp" />
     <ClCompile Include="getWidth.cpp" />
+    <ClCompile Include="halfSearch.cpp" />
     <ClCompile Include="haveRoute.cpp" />
     <ClCompile Include="highOfBiTree.cpp" />
     <ClCompile Include="highOfTree.cpp" />
@@ -211,11 +217,13 @@
     <ClCompile Include="revertSquence.c" />
     <ClCompile Include="sequenceTree.cpp" />
     <ClCompile Include="shareStack.cpp" />
+    <ClCompile Include="shellSort.cpp" />
     <ClCompile Include="singleShortestPath.cpp" />
     <ClCompile Include="sortLink.cpp" />
     <ClCompile Include="subList.cpp" />
     <ClCompile Include="swapChild.cpp" />
     <ClCompile Include="tagQueue.cpp" />
+    <ClCompile Include="TopologicalSort.cpp" />
     <ClCompile Include="trainArrange.cpp" />
     <ClCompile Include="traverseTree.cpp" />
     <ClCompile Include="WPL.cpp" />

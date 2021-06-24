@@ -3,7 +3,7 @@
 	分析：
 		我们需要创建一个链表，然后设置front、rear指针，用来模拟入队出队的过程
 */
-#define TYPE int
+#define TYPE biTree*
 struct biTree {//新增树节点
 	char data;
 	struct biTree *lchild;
@@ -65,29 +65,6 @@ bool deQueue(LinkQueue *lq,TYPE *data) {
 	free(p);
 	return true;
 }
-//入队(一个树节点)
-//bool enQueueN(LinkQueue *lq, TYPE *node) {//队尾插入
-//	struct Link *newd = (struct Link *)malloc(sizeof(struct Link));
-//	newd->node.data = node->data;
-//	newd->node.lchild = node->lchild;
-//	newd->node.rchild = node->rchild;
-//	lq->rear->next = newd;
-//	lq->rear = newd;
-//	return true;
-//}
-//出队(一个树节点)
-//bool deQueueN(LinkQueue *lq, TYPE *node) {
-//	if (isEmpty(lq))return false;
-//	struct Link *p = lq->front->next;//保存下一个节点
-//	*node = lq->front->next->node;//取出队首节点值
-//	lq->front->next = p->next;//删除队首节点
-//	if (lq->rear == p) {
-//		lq->rear = lq->front;
-//	}
-//	free(p);
-//	return true;
-//}
-
 //打印队列中元素
 void printQ(LinkQueue *lq) {
 	Link *p = lq->front->next;

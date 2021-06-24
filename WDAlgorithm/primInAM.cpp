@@ -50,7 +50,8 @@
 //		weights[k] = 0;//将第k个顶点置为已访问，即代表它已加入最小生成树
 //		//如有顶点未处理，则看情况需更新weights数组
 //		for (int j = 0; j < G->numV; j++) {
-//			if (weights[j] && G->Edge[k][j] < weights[j]) {//在j处的旧值大于我们加入新节点后的
+//			if (weights[j] && G->Edge[k][j] < weights[j]) {//在j处的旧值大于我们加入新节点后的,可以这样理解：对于我们之前已标记的
+//														   //权值对应着一条边，现在我有一条边值小于之前的，当然要换啦。
 //				weights[j] = G->Edge[k][j];
 //			}
 //		}
@@ -62,10 +63,10 @@
 //	}
 //}
 //int main() {
-//	void createGraph(adjMatrix *);
+//	void createGraphFromFile(adjMatrix *);
 //	void dispGraph(adjMatrix *G);
-//	adjMatrix *G = (adjMatrix *)malloc(sizeof(adjMatrix *));
-//	createGraph(G);
+//	adjMatrix *G = (adjMatrix *)malloc(sizeof(adjMatrix ));
+//	createGraphFromFile(G);
 //	dispGraph(G);
 //	prim(G, 0);
 //	return 0;

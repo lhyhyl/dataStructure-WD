@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>
-#define TYPE biTree*
+#define TYPE int
 struct biTree {
 	char data;
 	struct biTree *lchild;
