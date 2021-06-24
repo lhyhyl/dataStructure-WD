@@ -1,8 +1,8 @@
-/*
-	试编写一个算法将一颗二叉树的所有节点的左右子树进行交换。
-	分析：
-		我们仍然可以采用递归的方式进行交换
-*/
+///*
+//	试编写一个算法将一颗二叉树的所有节点的左右子树进行交换。
+//	分析：
+//		我们仍然可以采用递归的方式进行交换
+//*/
 //struct biTree {
 //	char data;
 //	struct biTree *lchild;
@@ -18,10 +18,10 @@
 //	}
 //	else {
 //		swapTree(p->lchild);//交换左子树
-//		swapTree(p->rchild);//交换右子树
 //		t = p->lchild;
 //		p->lchild = p->rchild;
 //		p->rchild = t;
+//		swapTree(p->rchild);//交换右子树
 //	}
 //}
 //int main() {

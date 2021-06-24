@@ -1,12 +1,12 @@
-/*
-	设一个二叉树各节点的值互不相同，其先序遍历序列和中序遍历序列分别存于两个一维数组A、B中，试编写算法建立该二叉树的二叉链表
-	分析：
-		这是一个典型的已知中序和先序求二叉树的案例，具体实现步骤如下：
-		1、先根据先序序列确定树的根节点
-		2、根据根节点在中序在中序序列中划分出二叉树的左右子树包含哪些节点，然后根据左右子树节点在先序序列中的次序确定子树的
-		的根节点，即回到步骤一。
-		如此重复，直到每科子树仅有一个节点为止
-*/
+///*
+//	设一个二叉树各节点的值互不相同，其先序遍历序列和中序遍历序列分别存于两个一维数组A、B中，试编写算法建立该二叉树的二叉链表
+//	分析：
+//		这是一个典型的已知中序和先序求二叉树的案例，具体实现步骤如下：
+//		1、先根据先序序列确定树的根节点
+//		2、根据根节点在中序在中序序列中划分出二叉树的左右子树包含哪些节点，然后根据左右子树节点在先序序列中的次序确定子树的
+//		的根节点，即回到步骤一。
+//		如此重复，直到每科子树仅有一个节点为止
+//*/
 //struct biTree {
 //	char data;
 //	struct biTree *lchild;
@@ -15,7 +15,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //biTree *preInCreate(char *arrIn,char *arrPre,int l1,int h1,int l2,int h2) {
-//	//l1 h1 为中序的第一和最后一个节点下标，l2 h2 为先序的第一和最后一个节点
+//	//l1 h1 为中序的第一和最后一个节点下标，l2 h2 为先序的第一和最后一个节点下标
 //	int llen, rlen,i;//左子树、右子树长度
 //	struct biTree *root = (struct biTree *)malloc(sizeof(struct biTree));
 //	root->data = *(arrPre + l2);
@@ -38,7 +38,8 @@
 //	return root;
 //}
 //int main() {
-//	char arrIn[] = { 'D','B','E','A','F','C','G' }, arrPre[] = {'A','B','D','E','C','F','G'};
+//	char arrIn[] = { 'D','B','E','A','F','C','G' }, 
+//		arrPre[] = {'A','B','D','E','C','F','G'};
 //	struct biTree *root;
 //	void inOrder(biTree *);
 //	void preOrder(biTree *);

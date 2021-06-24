@@ -3,7 +3,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#define TYPE biTree* 
+#define TYPE biTree*
 
 struct biTree {
 	char data;
@@ -41,27 +41,15 @@ bool enQueue(Squeue *sq, TYPE data, int maxSize) {
 	sq->rear = (sq->rear + 1) % maxSize;
 	return true;
 }
-//入队（结构体）
-bool enQueueS(Squeue *sq, biTree *p, int maxSize) {
-	if (isFull(sq, maxSize)) return false;
-	*(sq->arr + sq->rear) = p;
-	sq->rear = (sq->rear + 1) % maxSize;
-	return true;
-}
+
 //出队
-//bool deQueue(Squeue *sq, TYPE *data,int maxSize) {
-//	if (isEmpty(sq)) return false;
-//	*data = sq->arr[sq->front];
-//	sq->front = (sq->front + 1) % maxSize;
-//	return true;
-//}
-//出队（结构体）
-bool deQueueS(Squeue *sq, biTree *p, int maxSize) {
+bool deQueue(Squeue *sq, TYPE *data,int maxSize) {
 	if (isEmpty(sq)) return false;
-	p = *(sq->arr + sq->front);
+	*data = sq->arr[sq->front];
 	sq->front = (sq->front + 1) % maxSize;
 	return true;
 }
+
 //打印队列中元素
 //void printQ(Squeue *sq,int maxSize) {
 //	if (isEmpty(sq)) return ;

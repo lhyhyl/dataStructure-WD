@@ -28,6 +28,9 @@
     <Filter Include="源文件\graph">
       <UniqueIdentifier>{6ac52a9d-49f2-4701-8f7b-7e5fd13c52f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\sort">
+      <UniqueIdentifier>{465d1eb1-80aa-4c21-90ee-c04e03dacb6b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="revertSquence.c">
@@ -308,6 +311,36 @@
     </ClCompile>
     <ClCompile Include="kruskal.cpp">
       <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="singleShortestPath.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="primInAL2.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="DijkstraAM.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="DijkstraAL.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="floydAM.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="TopologicalSort.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="getHigh.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="halfSearch.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="directInsertSort.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="shellSort.cpp">
+      <Filter>源文件\sort</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

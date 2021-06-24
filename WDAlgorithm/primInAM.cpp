@@ -10,60 +10,64 @@
 //	int Edge[MAXSIZE][MAXSIZE];
 //	int numV, numE;//顶点、边数量
 //}adjMatrix;
-//void outPut(adjMatrix *G, int **weights) {//输出最小生成树
-//	for (int i = 0; i < G->numV; i++) {
-//		for (int j = i; j < G->numV; j++) {
-//			if (weights[i][j] != 0) {
-//				printf("%c->%c(%d)\n", G->Edge[i], G->Edge[j], G->Edge[i][j]);
+//
+//int getSum(adjMatrix *G, int *prims) {//获得最小生成树的权值
+//	int sum = 0;
+//	for (int i = 1; i < G->numV; i++) {
+//		int min = 32767;
+//		for (int j = 0; j < i; j++) {
+//			if (G->Edge[prims[j]][prims[i]] < min) {
+//				min = G->Edge[prims[j]][prims[i]];//疯了，把prims[j]写成了j，害我调试了好久！！！
 //			}
 //		}
+//		sum += min;
 //	}
+//	return sum;
 //}
 //void prim(adjMatrix *G, int start) {
-//	int *prims = (int *)malloc(sizeof(int)*G->numV);//创建大小为图顶点个数的数组，用于存储依次加入的顶点
-//	int **weights = (int **)malloc(sizeof(int *)*G->numV);//两点间的权值数据
+//	int prims[100];//存储最小生成树结果数组
+//	int weights[100];//当前已加入最小生成树的邻接顶点的权值
+//	int min, k, index = 0;
 //	for (int i = 0; i < G->numV; i++) {
-//		weights[i] = (int *)malloc(sizeof(int *)*G->numV);
+//		weights[i] = G->Edge[start][i];//把当前传入顶点的所有连接顶点的边的权值存入
 //	}
-//	for (int i = 0; i < G->numV; i++) {
+//	weights[start] = 0;//自己到自己的距离为0
+//	prims[index++] = start;
+//
+//	for (int i = 0; i < G->numV; i++) {//进行遍历，遍历一次加入一个顶点
+//		if (start == i)
+//			continue;
+//		min = 32767;
 //		for (int j = 0; j < G->numV; j++) {
-//			if (i == j) {
-//				weights[i][j] = 32767;//初始化该二位数组
-//
+//			if (weights[j] != 0 && weights[j] < min) {//如果当前顶点未曾加入最小树中且小于目前最小值，更新
+//				min = weights[j];
+//				k = j;//记录位置
 //			}
-//			else {
-//				weights[i][j] = 0;//初始化该二位数组
 //
+//		}
+//		//已找到最小值,更新prims数组
+//		prims[index++] = k;
+//		weights[k] = 0;//将第k个顶点置为已访问，即代表它已加入最小生成树
+//		//如有顶点未处理，则看情况需更新weights数组
+//		for (int j = 0; j < G->numV; j++) {
+//			if (weights[j] && G->Edge[k][j] < weights[j]) {//在j处的旧值大于我们加入新节点后的,可以这样理解：对于我们之前已标记的
+//														   //权值对应着一条边，现在我有一条边值小于之前的，当然要换啦。
+//				weights[j] = G->Edge[k][j];
 //			}
 //		}
-//	}
-//	int weight = 32767;//权值数据
-//	int index = 0;
-//	int s,r;//记录当前找到的最小边的起始顶点和终点
-//	prims[index++] = start;//先将start加入prims数组
-//	while (index != G->numV) {//顶点未全部加入prims数组，继续遍历
-//		for (int i = 0; i < index; i++) {//以prims数组中的值为起点找最小边
-//			for (int j = 0; i < G->numV; j++) {
-//				if (i!=j&&weight < G->Edge[i][j] && weights[i][j]== 32767) {
-//					weight = G->Edge[i][j];
-//					s = i;
-//					r = j;
-//				}
-//			}
-//		}
-//		//找到最短边后，加入prims数组，更新weights数组
-//		prims[index++] = s;
-//		weights[s][r] = G->Edge[s][r];
-//		weights[r][s] = G->Edge[s][r];
-//		weight = 32767;//重新置为最大值
-//	}
-//	outPut(G, weights);
 //
+//	}
+//	printf("%d ", getSum(G, prims));
+//	for (int i = 0; i < G->numV; i++) {
+//		printf("%c ", G->Vertex[prims[i]]);
+//	}
 //}
 //int main() {
-//	void createGraph(adjMatrix *);
-//	adjMatrix *G = (adjMatrix *)malloc(sizeof(adjMatrix *));
-//	createGraph(G);
+//	void createGraphFromFile(adjMatrix *);
+//	void dispGraph(adjMatrix *G);
+//	adjMatrix *G = (adjMatrix *)malloc(sizeof(adjMatrix ));
+//	createGraphFromFile(G);
+//	dispGraph(G);
 //	prim(G, 0);
 //	return 0;
 //}
