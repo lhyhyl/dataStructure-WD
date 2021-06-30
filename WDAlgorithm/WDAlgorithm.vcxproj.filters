@@ -342,5 +342,35 @@
     <ClCompile Include="shellSort.cpp">
       <Filter>源文件\sort</Filter>
     </ClCompile>
+    <ClCompile Include="bubbleSort.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="quickSort.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="biBubbleSort.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="oddAhead.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="findKthInSq.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="specialDivided.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="dutchFlag.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="heapSort.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="simpleSortInLink.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="mergeSort.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
