@@ -23,6 +23,7 @@
 //	bool pushS(Stack *, biTree*);
 //	bool pop(Stack *);
 //	biTree *top(Stack *);//返回得是一个指针
+//	
 //	while (m || !empty(s)) {
 //		if (m) {//一路将所有左孩子入栈
 //			pushS(s, m);
@@ -30,15 +31,17 @@
 //		}
 //		else {//没有左孩子，
 //			m = top(s);
-//			if (m->rchild && m != r) {//将右子树的所有左孩子入栈
-//				r = m;
+//			if (m->rchild&&r != m->rchild) {
 //				m = m->rchild;
+//				pushS(s, m);
+//				m = m->lchild;
 //			}
 //			else {//当既没有左孩子也没有右孩子时，该出栈了
 //				pop(s);//被查找元素先出栈
 //				if (m->data == x->data) {//找到了，那么如果栈中有元素，那全都是它的祖先
 //					break;
 //				}
+//				r = m;
 //				m = NULL;//一定要将p置空，不然又会把m的左孩子入栈
 //			}
 //		}
@@ -54,7 +57,8 @@
 //	sp = createStack(count);
 //	sq = createStack(count);
 //
-//	findAncestor(sp, m, p);//寻找p节点的祖先
+//	
+//	findAncestor(sp, m, p);//寻找p节点的祖先,放到栈中
 //	findAncestor(sq, m, q);//寻找q节点的祖先
 //
 //	//经过上面的操作，栈sp和sq里面已经存好了p、q各自的祖先，接下来便是寻找最近祖先

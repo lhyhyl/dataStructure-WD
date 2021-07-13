@@ -176,6 +176,7 @@
     <ClCompile Include="findX.c" />
     <ClCompile Include="floydAM.cpp" />
     <ClCompile Include="frostLeaf.cpp" />
+    <ClCompile Include="createCSTree_degree.cpp" />
     <ClCompile Include="getHigh.cpp" />
     <ClCompile Include="getWidth.cpp" />
     <ClCompile Include="halfSearch.cpp" />
@@ -192,6 +193,7 @@
     <ClCompile Include="isSortTree2.cpp" />
     <ClCompile Include="isSymmetry.cpp" />
     <ClCompile Include="isTree.cpp" />
+    <ClCompile Include="judgeMinHeap.cpp" />
     <ClCompile Include="kruskal.cpp" />
     <ClCompile Include="leafLink.cpp" />
     <ClCompile Include="levelInSortTree.cpp" />
@@ -208,6 +210,7 @@
     <ClCompile Include="mergeLists.c" />
     <ClCompile Include="mergeSort.cpp" />
     <ClCompile Include="nearestComAncestor.cpp" />
+    <ClCompile Include="numSort.cpp" />
     <ClCompile Include="oddAhead.cpp" />
     <ClCompile Include="outputLinkAndFree.cpp" />
     <ClCompile Include="postOrder.cpp" />
@@ -218,6 +221,7 @@
     <ClCompile Include="primInAL2.cpp" />
     <ClCompile Include="primInAM.cpp" />
     <ClCompile Include="printfNowLink.cpp" />
+    <ClCompile Include="putKtoCurPos.cpp" />
     <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="reverseNow.cpp" />
     <ClCompile Include="reverseOutput.cpp" />

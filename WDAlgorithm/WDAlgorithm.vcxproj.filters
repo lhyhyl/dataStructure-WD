@@ -372,5 +372,17 @@
     <ClCompile Include="mergeSort.cpp">
       <Filter>源文件\sort</Filter>
     </ClCompile>
+    <ClCompile Include="createCSTree_degree.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="judgeMinHeap.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="numSort.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="putKtoCurPos.cpp">
+      <Filter>源文件\sort</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
