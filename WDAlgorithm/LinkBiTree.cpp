@@ -7,7 +7,7 @@ struct biTree {
 	TYPE data;
 	struct biTree *lchild;
 	struct biTree *rchild;
-	//int ltag, rtag;
+	int ltag, rtag;
 };
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,8 +22,8 @@ biTree *create(biTree *T) {//这里我们采用先序创建一颗二叉树
 		T->data = data;
 		T->lchild = NULL;
 		T->rchild = NULL;
-		//T->ltag = 0;
-		//T->rtag = 0;
+		T->ltag = 0;
+		T->rtag = 0;
 		T->lchild = create(T->lchild);
 		T->rchild = create(T->rchild);
 	}

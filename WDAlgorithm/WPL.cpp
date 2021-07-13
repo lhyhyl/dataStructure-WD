@@ -1,11 +1,11 @@
-/*
-	二叉树的带权路径长度（WPL）是二叉树中所有叶节点的带权路径长度之和。给定一颗二叉树T,采用二叉链表存储，节点结构为
-	left weight right
-	试设计求T的WPL的算法
-	分析：
-		我们求带权路径长度，既需要知道叶节点的权值，也需要知道其经过的路径，我们可以设置一个变量depth代表深度，也就是
-		路径长度，设置一个静态变量weight累加带权路径，会使用到递归。
-*/
+///*
+//	二叉树的带权路径长度（WPL）是二叉树中所有叶节点的带权路径长度之和。给定一颗二叉树T,采用二叉链表存储，节点结构为
+//	left weight right
+//	试设计求T的WPL的算法
+//	分析：
+//		我们求带权路径长度，既需要知道叶节点的权值，也需要知道其经过的路径，我们可以设置一个变量depth代表深度，也就是
+//		路径长度，设置一个静态变量weight累加带权路径，会使用到递归。
+//*/
 //struct tree {
 //	int weight;
 //	struct tree *left, *right;
@@ -29,13 +29,13 @@
 //	return T;
 //}
 //int countWPL(tree *T, int depth) {
-//	static int totalWeight = 0;
+//	static int totalWeight = 0;//设置静态变量
 //	if (T) {
 //		if (!T->left && !T->right) {//已经是叶节点
 //			totalWeight += T->weight*depth;//计算带权路径
 //		}
 //		else {
-//			countWPL(T->left,depth+1);//左子树
+//			countWPL(T->left, depth + 1);//左子树
 //			countWPL(T->right, depth + 1);//右子树
 //		}
 //	}
@@ -46,7 +46,7 @@
 //	T = create(T);
 //	int depth = 0;
 //	int totalW;
-//	totalW=countWPL(T, depth);
-//	printf("该二叉树的带权路径长度为：%d",totalW);
+//	totalW = countWPL(T, depth);
+//	printf("该二叉树的带权路径长度为：%d", totalW);
 //	return 0;
 //}

@@ -126,6 +126,8 @@
   <ItemGroup>
     <ClCompile Include="addFreq.cpp" />
     <ClCompile Include="ALToAM.cpp" />
+    <ClCompile Include="biBubbleSort.cpp" />
+    <ClCompile Include="bubbleSort.cpp" />
     <ClCompile Include="DFSInAL.cpp" />
     <ClCompile Include="DFSUseStack.cpp" />
     <ClCompile Include="biTreeFromPreAndIn.cpp" />
@@ -138,6 +140,7 @@
     <ClCompile Include="DijkstraAL.cpp" />
     <ClCompile Include="DijkstraAM.cpp" />
     <ClCompile Include="directInsertSort.cpp" />
+    <ClCompile Include="dutchFlag.cpp" />
     <ClCompile Include="findKth.cpp" />
     <ClCompile Include="createLink.cpp" />
     <ClCompile Include="createSequentialQueue.cpp" />
@@ -164,6 +167,7 @@
     <ClCompile Include="findCommon.cpp" />
     <ClCompile Include="findCommon2.cpp" />
     <ClCompile Include="findCommonSuffix.cpp" />
+    <ClCompile Include="findKthInSq.cpp" />
     <ClCompile Include="findMidNum.c" />
     <ClCompile Include="findMin.cpp" />
     <ClCompile Include="findPre.cpp" />
@@ -172,10 +176,12 @@
     <ClCompile Include="findX.c" />
     <ClCompile Include="floydAM.cpp" />
     <ClCompile Include="frostLeaf.cpp" />
+    <ClCompile Include="createCSTree_degree.cpp" />
     <ClCompile Include="getHigh.cpp" />
     <ClCompile Include="getWidth.cpp" />
     <ClCompile Include="halfSearch.cpp" />
     <ClCompile Include="haveRoute.cpp" />
+    <ClCompile Include="heapSort.cpp" />
     <ClCompile Include="highOfBiTree.cpp" />
     <ClCompile Include="highOfTree.cpp" />
     <ClCompile Include="inOrder.cpp" />
@@ -187,6 +193,7 @@
     <ClCompile Include="isSortTree2.cpp" />
     <ClCompile Include="isSymmetry.cpp" />
     <ClCompile Include="isTree.cpp" />
+    <ClCompile Include="judgeMinHeap.cpp" />
     <ClCompile Include="kruskal.cpp" />
     <ClCompile Include="leafLink.cpp" />
     <ClCompile Include="levelInSortTree.cpp" />
@@ -201,7 +208,10 @@
     <ClCompile Include="matchBracket.cpp" />
     <ClCompile Include="mergeList.cpp" />
     <ClCompile Include="mergeLists.c" />
+    <ClCompile Include="mergeSort.cpp" />
     <ClCompile Include="nearestComAncestor.cpp" />
+    <ClCompile Include="numSort.cpp" />
+    <ClCompile Include="oddAhead.cpp" />
     <ClCompile Include="outputLinkAndFree.cpp" />
     <ClCompile Include="postOrder.cpp" />
     <ClCompile Include="preK.cpp" />
@@ -211,6 +221,8 @@
     <ClCompile Include="primInAL2.cpp" />
     <ClCompile Include="primInAM.cpp" />
     <ClCompile Include="printfNowLink.cpp" />
+    <ClCompile Include="putKtoCurPos.cpp" />
+    <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="reverseNow.cpp" />
     <ClCompile Include="reverseOutput.cpp" />
     <ClCompile Include="reverseQueue.cpp" />
@@ -218,8 +230,10 @@
     <ClCompile Include="sequenceTree.cpp" />
     <ClCompile Include="shareStack.cpp" />
     <ClCompile Include="shellSort.cpp" />
+    <ClCompile Include="simpleSortInLink.cpp" />
     <ClCompile Include="singleShortestPath.cpp" />
     <ClCompile Include="sortLink.cpp" />
+    <ClCompile Include="specialDivided.cpp" />
     <ClCompile Include="subList.cpp" />
     <ClCompile Include="swapChild.cpp" />
     <ClCompile Include="tagQueue.cpp" />
