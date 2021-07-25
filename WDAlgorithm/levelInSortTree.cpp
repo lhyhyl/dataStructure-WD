@@ -1,8 +1,8 @@
-/*
-	设计一个算法，求出指定节点在给定二叉排序树中的层次
-	分析：
-		我们可以根据二叉排序树的性质，从根节点一直向下查找，每查找一次，层次便加一
-*/
+///*
+//	设计一个算法，求出指定节点在给定二叉排序树中的层次
+//	分析：
+//		我们可以根据二叉排序树的性质，从根节点一直向下查找，每查找一次，层次便加一
+//*/
 //typedef struct node {
 //	int data;
 //	node *left, *right;
@@ -26,26 +26,24 @@
 //	}
 //	return T;
 //}
-//int findLevel(Tree *T, int p) {
-//	static int depth = 1;
+//void findLevel(Tree *T, int p,int &depth) {
 //	if (T) {
 //		if (T->data < p) {
-//			findLevel(T->right, p);
 //			depth++;
+//			findLevel(T->right, p,depth);
 //		}
 //		else if(T->data > p){
-//			findLevel(T->left, p);
 //			depth++;
+//			findLevel(T->left, p,depth);
 //		}
 //	}
-//	return depth;
 //}
 //int main() {
 //	//创建一颗二叉排序树
 //	Tree *T = (Tree *)malloc(sizeof(Tree *));
 //	T = create(T);
-//	int p = 9,depth;//手动指定节点值
-//	depth = findLevel(T,p);
+//	int p = 7,depth=1;//手动指定节点值
+//	findLevel(T,p,depth);
 //	printf("该节点所在的层次为第%d层",depth);
 //	return 0;
 //}

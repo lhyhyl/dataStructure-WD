@@ -13,7 +13,7 @@
 //#include<stdio.h>
 //#include <stdlib.h>
 //void createCSTree_degree(char *level, int *degree, node **pointer, int n) {
-//	int k = 0;
+//	int k = 0;//判断到了哪个节点
 //	for (int i = 0; i < n; i++) {//初始化pointer
 //		pointer[i]->data = level[i];
 //		pointer[i]->fch = NULL;
@@ -24,7 +24,7 @@
 //		if (d) {
 //			k++;//k为子女节点序号
 //			pointer[i]->fch = pointer[k];
-//			for (int j = 2; j <= d; j++) {
+//			for (int j = 0; j < d - 1; j++) {
 //				k++;
 //				pointer[k - 1]->nsib = pointer[k];
 //			}
@@ -40,12 +40,12 @@
 //	}
 //};
 //int main() {
-//	char level[5] = { 'A','B','E','G','D' };//层次遍历，用数组存储
-//	int degree[] = { 3,1,0,0,0 };
-//	node* *pointer = (node* *)malloc(sizeof(node*) * 5);
-//	for (int i = 0; i < 5; i++) {
+//	char level[6] = { 'A','B','E','G','D','F' };//层次遍历，用数组存储
+//	int degree[] = { 3,2,0,0,0,0 };
+//	node* *pointer = (node* *)malloc(sizeof(node*) * 6);
+//	for (int i = 0; i < 6; i++) {
 //		pointer[i] = (node*)malloc(sizeof(node*));
 //	}
-//	createCSTree_degree(level, degree, pointer, 5);
+//	createCSTree_degree(level, degree, pointer, 6);
 //	inOrder(pointer[0]);
 //}
