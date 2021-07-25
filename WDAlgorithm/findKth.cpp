@@ -41,7 +41,7 @@
 //	}
 //	return T;
 //}
-//int getCount(Tree *T) {//统计每个节点的以它为根的子树的节点个数
+//int getCount(Tree *T) {//统计每个节点的以它为根的子树上的节点个数
 //	if (!T)return 0;
 //	int lcount, rcount;
 //	lcount = getCount(T->left);
