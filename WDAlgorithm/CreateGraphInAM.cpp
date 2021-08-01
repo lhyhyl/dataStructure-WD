@@ -82,7 +82,7 @@ void createGraphFromFile(adjMatrix *G) {
 		else {//开始依次存储边信息
 			fgets(ev, 4, fp);//同样先吃掉换行符
 			fgets(arc, 6, fp);//读取该行的边信息
-			G->Edge[(int)ev[0] - 48 - 1][(int)ev[2] - 48 - 1] = (int)ev[4] - 48;
+			G->Edge[(int)arc[0] - 48 - 1][(int)arc[2] - 48 - 1] = (int)arc[4] - 48;
 		}
 
 	}
@@ -119,6 +119,6 @@ void dispGraph(adjMatrix *G) {
 }
 //int main() {
 //	adjMatrix G;
-//	createGraph(&G);
+//	createGraphFromFile(&G);
 //	dispGraph(&G);
 //}
