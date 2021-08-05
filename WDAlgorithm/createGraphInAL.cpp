@@ -16,7 +16,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define MAXSIZE 100
 typedef struct EdgeNode {//边表结点
-	int index;//该边所指向的顶点的位置
+	int index;//该边所指向的顶点的位置,在顶点数组里面的位置信息
 	int weight;//权值
 	EdgeNode *next;//下一个邻接边
 }EdgeNode;
@@ -44,7 +44,7 @@ void createGraph(ALGraph *G) {
 		printf("请输入第%d个结点信息：", i + 1);
 		scanf("\n%c", &G->adjlist[i].info);
 		G->adjlist[i].firstEdge = NULL;
-		G->adjlist[i].firstEdge->index = -1;
+		//G->adjlist[i].firstEdge->index = -1;
 	}
 
 	printf("请输入边表信息：\n");
@@ -68,7 +68,7 @@ void createGraph(ALGraph *G) {
 }
 void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点数，对应关系
 	FILE *fp;//创建文件指针
-	char ev[4] = { 0 };//顶点，边个数信息
+	char ev[4] = { 0 };//边、顶点个数信息
 	char arc[6] = { 0 };//边信息
 	char *vertex;//顶点信息，名称
 	fp = fopen("graph.txt", "r");//打开文件
@@ -77,8 +77,8 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 		return;
 	}
 	fgets(ev, 4, fp);//读取第一行
-	G->numE = atoi(&ev[0]);//因为有空格所以跳着取值
-	G->numV = atoi(&ev[2]);//用atoi()将字符型数据转化为整型
+	G->numE = ev[0]-48;//因为有空格所以跳着取值
+	G->numV = ev[2]-48;//用atoi()将字符型数据转化为整型
 	vertex = (char *)malloc(sizeof(char*)*G->numV);//这是用来存储顶点信息的数组（顶点的名字）
 	for (int i = 0; i <= G->numE; i++) {//开始获取后面的信息
 		if (i == 0) {//此时，根据我们文件的结构，第二行是顶点信息
