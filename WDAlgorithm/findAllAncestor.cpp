@@ -20,13 +20,13 @@
 //	struct biTree *r = (struct biTree *)malloc(sizeof(struct biTree));
 //	struct biTree *tp = (struct biTree *)malloc(sizeof(struct biTree));
 //
-//	bool pushS(Stack *, biTree*);
+//	bool push(Stack *, biTree*);
 //	bool pop(Stack *);
 //	biTree *top(Stack *);//返回得是一个指针
 //	bool empty(Stack *);
 //	while (p || !empty(s)) {
 //		if (p) {//一路将所有左孩子入栈
-//			pushS(s, p);
+//			push(s, p);
 //			p = p->lchild;
 //		}
 //		else {//没有左孩子，

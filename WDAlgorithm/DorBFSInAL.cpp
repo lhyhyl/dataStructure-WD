@@ -13,23 +13,21 @@
 //#define MAXSIZE 100
 //#define TYPE int
 ////边表结构 
-//struct EdgeNode {
-//	int index;//在数组中的下标
+//typedef struct EdgeNode {//边表结点
+//	int index;//该边所指向的顶点的位置,在顶点数组里面的位置信息
 //	int weight;//权值
-//	EdgeNode *next;//下一个邻接点
-//};
-////顶点表节点结构
-//typedef struct VertexNode {
-//	char info;//节点信息
-//	EdgeNode *firstNode;//第一个邻接节点
-//}Adjlist[MAXSIZE];
+//	EdgeNode *next;//下一个邻接边
+//}EdgeNode;
 //
-////图结构
-//struct ALGraph {
+//typedef struct VertexNode {//顶点表节点
+//	int info;//顶点信息
+//	EdgeNode *firstEdge;//指向第一条依附该顶点的边的指针
+//}VertexNode, Adjlist[MAXSIZE];
+//
+//typedef struct {
 //	Adjlist adjlist;//顶点数组
-//	int numE, numV;//边数，顶点数
-//};
-//
+//	int numE, numV;//边数、顶点数
+//}ALGraph;
 ////队列结构(我们采用顺序队列)
 //struct Squeue {
 //	TYPE *arr;
@@ -38,12 +36,12 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //void BFSBegin(ALGraph *G) {
-//	void BFS(ALGraph *, int *,int);
+//	void BFS(ALGraph *, int *, int);
 //	int *visited = (int *)malloc(sizeof(int)*G->numV);//设置标记数组
 //	for (int i = 0; i < G->numV; i++) {
 //		visited[i] = 0;
 //	}
-//	for (int i = 0; i < G->numV; i++) {//从第一个节点开始
+//	for (int i = 1; i < G->numV; i++) {//从第一个节点开始
 //		if (!visited[i]) {
 //			BFS(G, visited, i);
 //		}
@@ -63,11 +61,13 @@
 //	while (!isEmpty(sq)) {//队列不空，取出队首元素，进行访问
 //		TYPE top;
 //		deQueue(sq, &top, G->numV);
-//		for (EdgeNode *w = G->adjlist[top].firstNode; w; w = w->next) {//依次将当前节点的边表入队，和层次遍历一致
-//			if (!visited[w->index])
+//		for (EdgeNode *w = G->adjlist[top].firstEdge; w; w = w->next) {//依次将当前节点的边表入队，和层次遍历一致
+//			if (!visited[w->index]) {
 //				printf("%c ", G->adjlist[w->index].info);
 //				visited[w->index] = 1;
 //				enQueue(sq, w->index, G->numV);
+//
+//			}
 //		}
 //	}
 //
@@ -87,10 +87,13 @@
 //void DFS(ALGraph *G, int *visited, VertexNode *v, int index) {
 //	printf("%c ", v->info);//打印传入的节点
 //	visited[index] = 1;//置访问为1
-//	if (v->firstNode) {//如果有邻接点，传入DFS
-//		if (!visited[v->firstNode->index]) {
-//			DFS(G, visited, &G->adjlist[v->firstNode->index], v->firstNode->index);
+//	for (EdgeNode *w = v->firstEdge; w; w = w->next) {
+//		if (w) {//如果有邻接点，传入DFS
+//			if (!visited[w->index]) {//未访问
+//				DFS(G, visited, &G->adjlist[w->index], w->index);
+//			}
 //		}
+//
 //	}
 //}
 //int main() {
@@ -104,8 +107,8 @@
 //	//打印图
 //	dispGraph(graph);
 //	//广度优先遍历
-//	BFSBegin(graph);
+//	//BFSBegin(graph);
 //	//深度优先遍历
-//	//DFSBegin(graph);
+//	DFSBegin(graph);
 //	return 0;
 //}

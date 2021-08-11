@@ -8,47 +8,47 @@
 
 
 */
-struct biTree {//树的结构体
-	char data;
-	struct biTree *lchild;
-	struct biTree *rchild;
-};
-struct Stack {//栈的结构体
-	biTree** arr;	//内存首地址
-	int  len;	//栈的容量
-	int top; 	//栈的下标
-};
-#include <stdio.h>
-#include <stdlib.h>
-void postOrder(biTree *T, Stack *s) {//后序遍历
-	biTree *p = T;
-	biTree *r = (struct biTree*)malloc(sizeof(struct biTree));
-	bool empty(Stack *);
-	bool pushS(Stack *, biTree *);
-	biTree *top(Stack *);
-	bool pop(Stack *);
-	while (p || !empty(s)) {
-		if (p) {//一路向左
-			pushS(s, p);
-			p = p->lchild;
-		}
-		else {
-			p = top(s);
-			if (p->rchild&&r != p->rchild) {
-				p = p->rchild;
-				pushS(s, p);
-				p = p->lchild;
-			}
-			else {
-				printf("%c ", p->data);//打印栈顶元素
-				r = p;
-				pop(s);//栈顶元素出栈
-				p = NULL;//这里一定要将p设为NULL，因为p的孩子已经遍历过了，不设置为NUll的话，又会将左孩子压入栈
-			}
-
-		}
-	}
-}
+//struct biTree {//树的结构体
+//	char data;
+//	struct biTree *lchild;
+//	struct biTree *rchild;
+//};
+//struct Stack {//栈的结构体
+//	biTree** arr;	//内存首地址
+//	int  len;	//栈的容量
+//	int top; 	//栈的下标
+//};
+//#include <stdio.h>
+//#include <stdlib.h>
+//void postOrder(biTree *T, Stack *s) {//后序遍历
+//	biTree *p = T;
+//	biTree *r = (struct biTree*)malloc(sizeof(struct biTree));
+//	bool empty(Stack *);
+//	bool push(Stack *, biTree *);
+//	biTree *top(Stack *);
+//	bool pop(Stack *);
+//	while (p || !empty(s)) {
+//		if (p) {//一路向左
+//			push(s, p);
+//			p = p->lchild;
+//		}
+//		else {
+//			p = top(s);
+//			if (p->rchild&&r != p->rchild) {
+//				p = p->rchild;
+//				push(s, p);
+//				p = p->lchild;
+//			}
+//			else {
+//				printf("%c ", p->data);//打印栈顶元素
+//				r = p;
+//				pop(s);//栈顶元素出栈
+//				p = NULL;//这里一定要将p设为NULL，因为p的孩子已经遍历过了，不设置为NUll的话，又会将左孩子压入栈
+//			}
+//
+//		}
+//	}
+//}
 //int main() {
 //	int count = 0;
 //	struct biTree *T = (struct biTree *)malloc(sizeof(struct biTree));

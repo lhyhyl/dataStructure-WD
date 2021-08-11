@@ -37,13 +37,15 @@ void createGraph(adjMatrix *G) {
 		printf("请输入边的信息vi vj w(以空格分开)");
 		scanf("%d %d %d", &vi, &vj, &w);//有权值就写
 		G->Edge[vi - 1][vj - 1] = w;//①
-		//G->Edge[vj - 1][vi - 1] = w;//②   这代表无向图
+		G->Edge[vj - 1][vi - 1] = w;//②   这代表无向图
 	}
 
 }
 void createGraphFromFile(adjMatrix *G) {
 	FILE *fp;//创建文件指针
-	char ev[4] = { 0 };//顶点，边个数信息
+	char ev[4] = {};
+	char numE[3] = { 0 };//边个数信息
+	char numV[3] = { 0 };//顶点个数信息
 	char arc[6] = { 0 };//边信息
 	char *vertex;//顶点信息，名称
 	fp = fopen("graph.txt", "r");//打开文件
@@ -51,11 +53,9 @@ void createGraphFromFile(adjMatrix *G) {
 		printf("该文件无法打开！");
 		return;
 	}
-	fgets(ev, 4, fp);//读取第一行
-	//G->numE = atoi(&ev[0]);//因为有空格所以跳着取值
-	G->numE = (int)ev[0] - 48;//因为有空格所以跳着取值
-	//G->numV = atoi(&ev[2]);//用atoi()将字符型数据转化为整型
-	G->numV = (int)ev[2] - 48;//因为有空格所以跳着取值
+	fscanf(fp,"%hu %hu", numE, numV);//读取第一行
+	G->numE = numE[0];
+	G->numV = numV[0];
 
 	//初始化图
 	for (int i = 0; i < G->numV; i++) {
@@ -83,6 +83,7 @@ void createGraphFromFile(adjMatrix *G) {
 			fgets(ev, 4, fp);//同样先吃掉换行符
 			fgets(arc, 6, fp);//读取该行的边信息
 			G->Edge[(int)arc[0] - 48 - 1][(int)arc[2] - 48 - 1] = (int)arc[4] - 48;
+			//G->Edge[(int)arc[2] - 48 - 1][(int)arc[0] - 48 - 1] = (int)arc[4] - 48;
 		}
 
 	}

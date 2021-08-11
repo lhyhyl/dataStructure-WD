@@ -45,36 +45,36 @@
 //	return sum;
 //}
 //void prim(ALGraph *G, int start) {
-//	int prims[100];//存储最小生成树结果数组
-//	int weights[100];//当前已加入最小生成树的邻接顶点的权值
+//	int prims[MAXSIZE];//存储最小生成树结果数组
+//	int lowCost[MAXSIZE];//当前已加入最小生成树的邻接顶点的权值
 //	int min, k, index = 0, weight;
 //	for (int i = 0; i < G->numV; i++) {
-//		weights[i] = 32767;//把所有值设为无穷
+//		lowCost[i] = 32767;//把所有值设为无穷
 //	}
 //	for (EdgeNode *p = G->adjlist[start].firstEdge; p; p = p->next) {
-//		weights[p->index] = p->weight;//把当前传入顶点的所有连接顶点的边的权值存入
+//		lowCost[p->index] = p->weight;//把当前传入顶点的所有连接顶点的边的权值存入
 //	}
-//	weights[start] = 0;//自己到自己的距离为0
+//	lowCost[start] = 0;//自己到自己的距离为0
 //	prims[index++] = start;
 //	for (int i = 0; i < G->numV; i++) {//进行顶点数轮的循环，每次循环加入一个顶点
 //		if (start == i)
 //			continue;
 //		min = 32767;
 //		for (int j = 0; j < G->numV; j++) {
-//			if (weights[j] != 0 && weights[j] < min) {//如果当前顶点未曾加入最小树中且小于目前最小值，更新
-//				min = weights[j];
+//			if (lowCost[j] != 0 && lowCost[j] < min) {//如果当前顶点未曾加入最小树中且小于目前最小值，更新
+//				min = lowCost[j];
 //				k = j;//记录位置
 //			}
 //
 //		}
 //		//已找到最小值,更新prims数组
 //		prims[index++] = k;
-//		weights[k] = 0;//将第k个顶点置为已访问，即代表它已加入最小生成树
-//		//如有顶点未处理，则看情况需更新weights数组
+//		lowCost[k] = 0;//将第k个顶点置为已访问，即代表它已加入最小生成树
+//		//如有顶点未处理，则看情况需更新lowCost数组
 //		for (int j = 0; j < G->numV; j++) {
 //			weight = getWeiFromAtoB(G, k, j);
-//			if (weights[j] && weight < weights[j]) {//在j处的旧值大于我们加入新节点后的
-//				weights[j] = weight;
+//			if (lowCost[j] && weight < lowCost[j]) {//在j处的旧值大于我们加入新节点后的
+//				lowCost[j] = weight;
 //			}
 //		}
 //	}

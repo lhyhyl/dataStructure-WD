@@ -38,7 +38,7 @@
 //	Stack *s;
 //	//声明各类方法
 //	Stack *createStack(int);
-//	bool pushS(Stack *,Recursion *);
+//	bool push(Stack *,Recursion *);
 //	bool full(Stack *);
 //	bool empty(Stack *);
 //	bool top(Stack *);

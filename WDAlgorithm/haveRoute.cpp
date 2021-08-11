@@ -122,7 +122,8 @@
 //		printf("vj= ");
 //		scanf("%d", &vj);
 //	}
-//	haveRoute = judgeRouteInBFS(G, vi - 1, vj - 1);
+//	//haveRoute = judgeRouteInBFS(G, vi - 1, vj - 1);
+//	haveRoute = judgeRouteInDFS(G, vi - 1, vj - 1);
 //	if (haveRoute) {
 //		printf("顶点%d到顶点%d存在路径", vi, vj);
 //	}

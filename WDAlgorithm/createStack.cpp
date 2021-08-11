@@ -2,7 +2,10 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>
-#define TYPE biTree*
+#define TYPE int
+//#define TYPE biTree*
+//#define TYPE char
+//#define TYPE Recursion
 struct biTree {
 	char data;
 	struct biTree *lchild;
@@ -36,9 +39,8 @@ bool full(Stack *stack) {
 bool empty(Stack *stack) {
 	return stack->top == -1;
 }
-
-//入栈（树结构）
-bool pushS(Stack *stack, TYPE p) {
+//入栈
+bool push(Stack *stack, TYPE p) {
 	if (full(stack)) return false;
 	*(stack->arr + ++stack->top) = p;
 	return true;
@@ -65,7 +67,7 @@ void destory(Stack *stack) {
 
 }
 //判断是否含有某个元素
-bool contain(Stack *stack, biTree *r) {
+bool contain(Stack *stack, TYPE r) {
 	if (empty(stack)) return false;
 	for (int i = stack->top; i >= 0; i--) {
 		if (r == *(stack->arr + i) ){//疯了，我居然把==写成了=

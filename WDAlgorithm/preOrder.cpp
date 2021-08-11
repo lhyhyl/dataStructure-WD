@@ -18,13 +18,13 @@
 //void preOrder(biTree *T, Stack *s) {//先序遍历
 //	biTree *p = T;
 //	bool empty(Stack *);
-//	bool pushS(Stack *, biTree *);
+//	bool push(Stack *, biTree *);
 //	biTree *top(Stack *);
 //	bool pop(Stack *);
 //	while (p || !empty(s)) {
 //		if (p) {//一路向左
 //			printf("%c ", p->data);//打印当前元素
-//			pushS(s, p);
+//			push(s, p);
 //			p = p->lchild;
 //		}
 //		else {

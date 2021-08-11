@@ -19,12 +19,12 @@
 //void inOrder(biTree *T,Stack *s) {//中序遍历
 //	biTree *p = T;
 //	bool empty(Stack *);
-//	bool pushS(Stack *,biTree * );
+//	bool push(Stack *,biTree * );
 //	biTree *top(Stack *);
 //	bool pop(Stack *);
 //	while (p||!empty(s)) {
 //		if (p) {//一路向左
-//			pushS(s,p);
+//			push(s,p);
 //			p = p->lchild;
 //		}
 //		else {

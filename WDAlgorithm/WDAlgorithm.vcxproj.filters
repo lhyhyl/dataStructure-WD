@@ -294,9 +294,6 @@
     <ClCompile Include="DFSUseStack.cpp">
       <Filter>源文件\graph</Filter>
     </ClCompile>
-    <ClCompile Include="DFSInAL.cpp">
-      <Filter>源文件\graph</Filter>
-    </ClCompile>
     <ClCompile Include="haveRoute.cpp">
       <Filter>源文件\graph</Filter>
     </ClCompile>
@@ -383,6 +380,12 @@
     </ClCompile>
     <ClCompile Include="putKtoCurPos.cpp">
       <Filter>源文件\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="DorBFSInAL.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="BFS_MIN_Distance.cpp">
+      <Filter>源文件\graph</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
