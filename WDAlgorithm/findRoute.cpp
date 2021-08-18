@@ -1,8 +1,8 @@
 ///*
 //	输出顶点vi到顶点vj的所有简单路径，图用邻接表存储
 //	分析：
-//		这里明说了输出路径，所以肯定存在简单路径。为了输出路径，我们还需要额外添加一个path数组，用来存储vi到vj的路径数据，方便我们之后
-//		打印输出。我们这里仍然采用深度优先遍历，广度优先遍历不适合。
+//		这里明说了输出路径，所以肯定存在简单路径。为了输出路径，我们还需要额外添加一个path数组，
+//		用来存储vi到vj的路径数据，方便我们之后打印输出。我们这里仍然采用深度优先遍历，广度优先遍历不适合。
 //*/
 //#define _CRT_SECURE_NO_WARNINGS
 //#define MAXSIZE 100
@@ -42,7 +42,7 @@
 //			findRoute(G,p->index,vj,path,visited,d);
 //		}
 //	}
-//	visited[vi] = 0;
+//	visited[vi] = 0;//重新置位可访问
 //}
 //int main() {
 //	void createGraphInFile(ALGraph *G);
@@ -55,7 +55,7 @@
 //	scanf("%d", &vi);
 //	printf("vj= ");
 //	scanf("%d", &vj);
-//	while (vi >= G->numV || vj >= G->numV) {
+//	while (vi > G->numV || vj > G->numV) {
 //		printf("输入有误，不存在该顶点，请重新输入！");
 //		printf("vi= ");
 //		scanf("%d", &vi);

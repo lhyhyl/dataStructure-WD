@@ -10,11 +10,11 @@
 //	b = tmp;
 //}
 //void heapAdjust(int *arr,int k, int len) {//堆的调整,将传入的以k为根节点的子树调整为大根堆
-//	arr[0] = arr[k];
-//	for (int i = 2 * k; i < len;i*=2) {
+//	arr[0] = arr[k];//暂存arr[k]
+//	for (int i = 2 * k; i <= len;i*=2) {
 //		if (i < len&&arr[i] < arr[i + 1])//如果右孩子更大，i指向右孩子
 //			i++;
-//		if (arr[0] > arr[i]) break;
+//		if (arr[0] >= arr[i]) break;
 //		else {
 //			arr[k] = arr[i];
 //			k = i;//继续向下调整
@@ -29,14 +29,14 @@
 //}
 //void heapSort(int *arr, int len) {
 //	buildMaxHeap(arr,len);//建堆
-//	for (int i = len; i > 1;i--) {
+//	for (int i = len; i >= 1;i--) {
 //		printf("%d ",arr[1]);
 //		swap(arr[i],arr[1]);//堆底弄上去
 //		heapAdjust(arr,1,i-1);//把剩余的元素排成堆
 //	}
 //}
 //int main() {
-//	int arr[] = { 9,3,4,10,8,5,7,12,10,15 };
-//	heapSort(arr,10);
+//	int arr[] = { 0,9,3,4,10 };
+//	heapSort(arr,4);
 //	return 0;
 //}

@@ -8,7 +8,7 @@
 //#include <stdlib.h>
 //
 //int partition(int *arr, int low, int high) {//该函数进行一次快速排序并返回基准元素最终所在位置
-//	int pivot = arr[low];
+//	int pivot = arr[low];//枢纽元素
 //	while (low < high) {
 //		while (low < high&&arr[high] >= pivot)--high;//从high往下找第一个小于pivot的元素
 //		arr[low] = arr[high];//移到low所在的位置
@@ -26,7 +26,7 @@
 //	}
 //}
 //int main() {
-//	int arr[] = { 5,3,4,10,6,11,12,14,20,18,41,20,31,13 };
-//	quickSort(arr,0,13);
+//	int arr[] = { 5,3,4,10,6,11,12 };
+//	quickSort(arr,0,6);
 //	return 0;
 //}

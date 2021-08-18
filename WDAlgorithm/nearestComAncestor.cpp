@@ -20,20 +20,20 @@
 //void findAncestor(Stack *s, biTree *m, biTree *x) {
 //	struct biTree *r = (struct biTree *)malloc(sizeof(struct biTree));
 //	bool empty(Stack *);
-//	bool pushS(Stack *, biTree*);
+//	bool push(Stack *, biTree*);
 //	bool pop(Stack *);
 //	biTree *top(Stack *);//返回得是一个指针
 //	
 //	while (m || !empty(s)) {
 //		if (m) {//一路将所有左孩子入栈
-//			pushS(s, m);
+//			push(s, m);
 //			m = m->lchild;
 //		}
 //		else {//没有左孩子，
 //			m = top(s);
 //			if (m->rchild&&r != m->rchild) {
 //				m = m->rchild;
-//				pushS(s, m);
+//				push(s, m);
 //				m = m->lchild;
 //			}
 //			else {//当既没有左孩子也没有右孩子时，该出栈了
@@ -64,7 +64,7 @@
 //	//经过上面的操作，栈sp和sq里面已经存好了p、q各自的祖先，接下来便是寻找最近祖先
 //	bool contain(Stack *,biTree *);
 //	bool empty(Stack *);
-//	bool pushS(Stack *, biTree*);
+//	bool push(Stack *, biTree*);
 //	bool pop(Stack *);
 //	biTree *top(Stack *);//返回得是一个指针
 //	while (!empty(sp)) {//当sp不空

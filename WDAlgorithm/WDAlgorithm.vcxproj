@@ -34,20 +34,20 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -126,9 +126,10 @@
   <ItemGroup>
     <ClCompile Include="addFreq.cpp" />
     <ClCompile Include="ALToAM.cpp" />
+    <ClCompile Include="BFS_MIN_Distance.cpp" />
     <ClCompile Include="biBubbleSort.cpp" />
     <ClCompile Include="bubbleSort.cpp" />
-    <ClCompile Include="DFSInAL.cpp" />
+    <ClCompile Include="DorBFSInAL.cpp" />
     <ClCompile Include="DFSUseStack.cpp" />
     <ClCompile Include="biTreeFromPreAndIn.cpp" />
     <ClCompile Include="changePos.c" />

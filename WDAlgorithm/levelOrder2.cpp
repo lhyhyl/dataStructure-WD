@@ -29,7 +29,7 @@
 //	bool deQueue(Squeue *, biTree **, int);
 //
 //	Stack *createStack(int);
-//	bool pushS(Stack *,biTree *);
+//	bool push(Stack *,biTree *);
 //	bool empty(Stack *);
 //	biTree *top(Stack *);
 //	bool pop(Stack *);
@@ -38,7 +38,7 @@
 //	enQueue(sq, p, maxSize);
 //	while (!isEmpty(sq)) {
 //		deQueue(sq, &r, maxSize);
-//		pushS(s,r);
+//		push(s,r);
 //		if (r->lchild)enQueue(sq, r->lchild, maxSize);
 //		if (r->rchild)enQueue(sq, r->rchild, maxSize);
 //	}

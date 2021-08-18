@@ -9,23 +9,23 @@
 //
 //bool isMinHeap(int *arr, int len) {
 //	if (len % 2 == 0) {//有一个单分支节点
-//		if (arr[len - 1] < arr[len / 2 - 1]) {
+//		if (arr[len ] < arr[len / 2 ]) {
 //			return false;
 //		}
-//		for (int i = len / 2 - 2; i >= 0;i--) {
+//		for (int i = len / 2 -1; i > 0;i--) {
 //			if (arr[i] > arr[2 * i] || arr[i] > arr[2 * i + 1])return false;
 //		}
 //	}
 //	else {
-//		for (int i = len / 2 ; i >= 0; i--) {
+//		for (int i = len / 2 ; i > 0; i--) {
 //			if (arr[i] > arr[2 * i] || arr[i] > arr[2 * i + 1])return false;
 //		}
 //	}
 //	return true;
 //}
 //int main() {
-//	int arr[] = { 1,2,3,4,5,6 ,7};
-//	if (isMinHeap(arr, 6)) {
+//	int arr[] = { 0,1,2,3,4,8,6,7};
+//	if (isMinHeap(arr, 7)) {
 //		printf("是小根堆");
 //	}
 //	else {

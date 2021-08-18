@@ -44,7 +44,7 @@
 //
 //	}
 //}
-//void topSort(ALGraph *G) {
+//void topoSort(ALGraph *G) {
 //	Stack *s = (struct Stack*)malloc(sizeof(struct Stack));
 //	Stack *createStack(int );
 //	bool push(Stack *, int data);
@@ -82,6 +82,6 @@
 //	void dispGraph(ALGraph *);
 //	createGraphInFile(G);//´´½¨Í¼
 //	dispGraph(G);
-//	topSort(G);
+//	topoSort(G);
 //	return 0;
 //}

@@ -10,25 +10,25 @@
 //	struct Link *next;
 //};
 //void simpleSort(Link *l) {//简单排序，每次选择一个最小的排在前面
-//	Link *p, *pre, *s, *r;
+//	Link *p, *pre, *m, *preM;
 //	while (l->next) {
-//		p = s = l->next, pre = r = l;
+//		p = m = l->next, pre = preM = l;
 //		while (p) {
-//			if (p->data < s->data) {
-//				r = pre;
-//				s = p;
+//			if (p->data < m->data) {
+//				preM = pre;
+//				m = p;
 //			}
 //			pre = p;
 //			p = p->next;
 //		}
-//		if (s == l->next) {
+//		if (m == l->next) {
 //			l = l->next;
 //		}
 //		else {
-//			r->next = s->next;
-//			s->next = l->next;
-//			l->next = s;
-//			l = s;
+//			preM->next = m->next;
+//			m->next = l->next;
+//			l->next = m;
+//			l = m;
 //
 //		}
 //	}

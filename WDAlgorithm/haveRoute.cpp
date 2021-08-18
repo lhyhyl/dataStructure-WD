@@ -36,7 +36,7 @@
 //	for (EdgeNode *p = G->adjlist[vi].firstEdge; p; p = p->next) {
 //		if (!visited[p->index]) {
 //			visited[p->index] = 1;
-//			if (p->index == vj) {
+//			if (p->index == vj) {//此时找到终止顶点
 //				flag = 1;
 //			}
 //			DFS(G, p->index, vj, visited, flag);
@@ -96,17 +96,11 @@
 //			}
 //		}
 //	}
-//	if (flag) {
-//		return 1;
-//
-//	}
-//	else {
-//		return 0;
-//	}
+//	return flag;
 //}
 //int main() {
 //	int haveRoute;
-//	void createGraphInFile(ALGraph *G);
+//	void createGraphInFile(ALGraph *);
 //	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph *));
 //	createGraphInFile(G);//创建图
 //	int vi, vj;
@@ -115,14 +109,15 @@
 //	scanf("%d", &vi);
 //	printf("vj= ");
 //	scanf("%d", &vj);
-//	while (vi >= G->numV || vj >= G->numV) {
+//	while (vi > G->numV || vj > G->numV) {
 //		printf("输入有误，不存在该顶点，请重新输入！");
 //		printf("vi= ");
 //		scanf("%d", &vi);
 //		printf("vj= ");
 //		scanf("%d", &vj);
 //	}
-//	haveRoute = judgeRouteInBFS(G, vi - 1, vj - 1);
+//	//haveRoute = judgeRouteInBFS(G, vi - 1, vj - 1);
+//	haveRoute = judgeRouteInDFS(G, vi - 1, vj - 1);
 //	if (haveRoute) {
 //		printf("顶点%d到顶点%d存在路径", vi, vj);
 //	}
