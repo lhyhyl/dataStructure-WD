@@ -5,7 +5,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //void directInsertSort(int *arr,int len) {
-//	for (int i = 0; i < len;i++) {
+//	for (int i = 0; i < len;i++) {//进行len次循环 
 //		for (int j = 0; j < i;j++) {
 //			if (arr[i] < arr[j]) {//此时找到了它的归宿
 //				int nowN = arr[i];//将需调换的值暂存

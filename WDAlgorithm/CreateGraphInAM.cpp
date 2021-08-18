@@ -7,10 +7,11 @@
 */
 #define _CRT_SECURE_NO_WARNINGS
 #define MAXSIZE 100 //数组最大值
+#define TYPE int
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Graph {
-	char Vertex[MAXSIZE];
+	TYPE Vertex[MAXSIZE];
 	int Edge[MAXSIZE][MAXSIZE];
 	int numV, numE;//顶点、边数量
 }adjMatrix;
@@ -83,7 +84,7 @@ void createGraphFromFile(adjMatrix *G) {
 			fgets(ev, 4, fp);//同样先吃掉换行符
 			fgets(arc, 6, fp);//读取该行的边信息
 			G->Edge[(int)arc[0] - 48 - 1][(int)arc[2] - 48 - 1] = (int)arc[4] - 48;
-			//G->Edge[(int)arc[2] - 48 - 1][(int)arc[0] - 48 - 1] = (int)arc[4] - 48;
+			G->Edge[(int)arc[2] - 48 - 1][(int)arc[0] - 48 - 1] = (int)arc[4] - 48;
 		}
 
 	}

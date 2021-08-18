@@ -109,11 +109,11 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 			G->adjlist[atoi(&arc[0])-1].firstEdge = e;
 			
 			//下面与上面相似，目的在于构建无向图
-			EdgeNode *otherE = (EdgeNode *)malloc(sizeof(struct EdgeNode ));
-			otherE->index = atoi(&arc[0]) - 1;//数组下标要减一
-			otherE->weight = atoi(&arc[4]);
-			otherE->next = G->adjlist[atoi(&arc[2]) - 1].firstEdge;
-			G->adjlist[atoi(&arc[2]) - 1].firstEdge = otherE;
+			//EdgeNode *otherE = (EdgeNode *)malloc(sizeof(struct EdgeNode ));
+			//otherE->index = atoi(&arc[0]) - 1;//数组下标要减一
+			//otherE->weight = atoi(&arc[4]);
+			//otherE->next = G->adjlist[atoi(&arc[2]) - 1].firstEdge;
+			//G->adjlist[atoi(&arc[2]) - 1].firstEdge = otherE;
 		}
 
 	}

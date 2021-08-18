@@ -10,7 +10,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //typedef struct Graph {
-//	char Vertex[MAXSIZE];
+//	int Vertex[MAXSIZE];
 //	int Edge[MAXSIZE][MAXSIZE];
 //	int numV, numE;//¶¥µã¡¢±ßÊýÁ¿
 //}adjMatrix;
@@ -48,7 +48,7 @@
 //		}
 //	}
 //	for (int i = 0; i < G->numV; i++) {
-//		i == start ? printf("%d ", 0) : printf("%c ", G->Vertex[prevs[i]]);
+//		i == start ? printf("%d ", 0) : printf("%d ", G->Vertex[prevs[i]]-48);
 //	}
 //	printf("\n");
 //	for (int i = 0; i < G->numV; i++) {

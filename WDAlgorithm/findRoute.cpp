@@ -42,7 +42,7 @@
 //			findRoute(G,p->index,vj,path,visited,d);
 //		}
 //	}
-//	visited[vi] = 0;
+//	visited[vi] = 0;//重新置位可访问
 //}
 //int main() {
 //	void createGraphInFile(ALGraph *G);
@@ -55,7 +55,7 @@
 //	scanf("%d", &vi);
 //	printf("vj= ");
 //	scanf("%d", &vj);
-//	while (vi >= G->numV || vj >= G->numV) {
+//	while (vi > G->numV || vj > G->numV) {
 //		printf("输入有误，不存在该顶点，请重新输入！");
 //		printf("vi= ");
 //		scanf("%d", &vi);

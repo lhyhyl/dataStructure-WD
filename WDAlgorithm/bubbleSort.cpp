@@ -5,8 +5,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //void bubbleSort(int *arr, int len) {
-//
-//	for (int i = 0; i < len-1; i++) {//只需要len-1趟遍历
+//	for (int i = 0; i < len - 1; i++) {//只需要len-1趟遍历
 //		int flag = 0;//标志本轮是否有操作
 //		for (int j = 0; j < len - 1; j++) {
 //			int tmp;
@@ -16,16 +15,16 @@
 //				arr[j + 1] = tmp;
 //				flag = 1;
 //			}
-//			if (!flag) {
-//				break;
-//			}
+//		}
+//		if (!flag) {
+//			break;
 //		}
 //
 //	}
 //
 //}
 //int main() {
-//	int arr[] = { 9,3,4,10,8,5,7,12,10,15 };
+//	int arr[10] = { 9,3,4,10,8,5,7,12,10,15 };
 //	bubbleSort(arr, 10);
 //	return 0;
 //}

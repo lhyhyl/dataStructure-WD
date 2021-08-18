@@ -36,7 +36,7 @@
 //int findAnster(int *fa, int i) {
 //	if (fa[i] == i)return i;//找到返回
 //	else {
-//		fa[i] = findAnster(fa, fa[i]);//进行路径压缩
+//		fa[i] = findAnster(fa, fa[i]);//进行路径压缩,即将i处
 //		return fa[i];//未找到继续
 //	}
 //}
@@ -59,8 +59,8 @@
 //			weights[i][j] = 0;//初始化该二位数组
 //		}
 //	}
-//	int eadges = 0;
-//	while (eadges < G->numV - 1) {
+//	int edges = 0;
+//	while (edges < G->numV - 1) {
 //		int weight = 32767;
 //		int start, end;
 //		for (int i = 0; i < G->numV; i++) {//遍历每一个顶点的所有边
@@ -76,7 +76,7 @@
 //		unionn(fa, start, end);
 //		weights[start][end] = weight;
 //		weights[end][start] = weight;
-//		eadges++;
+//		edges++;
 //	}
 //	outPut(G, weights);
 //

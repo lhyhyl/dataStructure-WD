@@ -23,7 +23,7 @@
 //	while (m <= mid)arr[k++] = arrB[m++];
 //}
 //void mergeSort(int *arr, int low, int high) {
-//	if (low < high) {
+// 	if (low < high) {
 //		int mid = (low + high) / 2;
 //		mergeSort(arr, low, mid);
 //		mergeSort(arr, mid + 1, high);
@@ -31,7 +31,7 @@
 //	}
 //}
 //int main() {
-//	int arr[] = { 1,3,5,62,11,9,7,6,4,3,2,1 };
-//	mergeSort(arr, 0, 11);
+//	int arr[] = { 38,49,65,97,76,13,27 };
+//	mergeSort(arr, 0, 6);
 //	return 0;
 //}
