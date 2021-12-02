@@ -3,14 +3,14 @@
 	分析：
 		我们采用头插法进行逆置。
 */
-struct Link {
-	int data;
-	struct Link* next;
-};
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <stdlib.h>
-//void reverse(Link *h) {
+//struct Link {
+//	int data;
+//	struct Link* next;
+//};
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <stdlib.h>
+////void reverse(Link *h) {
 //	//struct Link *pre = h, *p = h->next, *q = h->next,*r;
 //	////pre记录操作节点p上一个节点，q记录第一个节点，之后需要指向NULL,r用于指向每一次操作时p的后一个节点，防止断链
 //	//while (p) {//遍历操作，修改指针指向

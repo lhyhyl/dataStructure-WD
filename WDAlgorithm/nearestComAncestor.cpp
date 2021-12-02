@@ -69,7 +69,7 @@
 //	biTree *top(Stack *);//返回得是一个指针
 //	while (!empty(sp)) {//当sp不空
 //		*r = top(sp);
-//		if (contain(sq,*r)) {//判断sq中知否包含d
+//		if (contain(sq,*r)) {//判断sq中是否包含d
 //			break;
 //		}
 //		pop(sp);

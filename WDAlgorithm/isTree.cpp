@@ -27,8 +27,8 @@
 //	visited[index] = 1;//标记为已访问
 //	numV++;//顶点数加一
 //	for (EdgeNode* p = G->adjlist[index].firstEdge; p; p = p->next) {
+//		numE++;
 //		if (!visited[p->index]) {
-//			numE++;
 //			DFS(G, visited, numV, numE, p->index);
 //		}
 //	}
@@ -40,7 +40,7 @@
 //		*(visited + i) = 0;//标记数组初始化
 //	}
 //	DFS(G, visited, numV, numE, 0);//只进行一次遍历
-//	if (numV == G->numV&&numE == (G->numV - 1)) {
+//	if (numV == G->numV&&numE == 2*(G->numV - 1)) {
 //		return true;
 //	}
 //	else {
@@ -51,7 +51,10 @@
 //	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph *));
 //	bool Tree;
 //	void createGraphInFile(ALGraph *);
+//	//void createGraph(ALGraph *);
+//	//createGraph(G);
 //	createGraphInFile(G);//创建图
+//
 //	void dispGraph(ALGraph *G);
 //	dispGraph(G);
 //	Tree = isTree(G);

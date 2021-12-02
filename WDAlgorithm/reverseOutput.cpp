@@ -3,21 +3,21 @@
 	分析：
 		这种类型就有点像是栈的性质，我们可以利用递归来处理，出口便是尾元素
 */
-struct Link {
-	int data;
-	struct Link* next;
-};
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <stdlib.h>
-void reverseOutput(Link *p) {
-	if (p == NULL) return;
-	else {
-		reverseOutput(p->next);
-		printf("%d ",p->data);
-	}
-	
-}
+//struct Link {
+//	int data;
+//	struct Link* next;
+//};
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <stdlib.h>
+//void reverseOutput(Link *p) {
+//	if (p == NULL) return;
+//	else {
+//		reverseOutput(p->next);
+//		printf("%d ",p->data);
+//	}
+//	
+//}
 //int main() {
 //	int n,data;
 //	printf("请输入创建链表的节点个数：");

@@ -17,7 +17,7 @@
 //#include <stdlib.h>
 //
 //int getWidth(biTree *b, LinkQueue *lq) {
-//	int oldNum = 0, curNum = 0, width = 0;;
+//	int oldNum = 0, curNum = 0, width = 0;
 //	bool enQueue(LinkQueue *lq, biTree *node);
 //	bool deQueue(LinkQueue *lq, biTree **node);
 //	bool isEmpty(LinkQueue *lq);

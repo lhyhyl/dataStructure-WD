@@ -5,32 +5,32 @@
 	一个节点，如果他们再次相遇了，说明链表有环，如果p指针为NULL了，说明无环。同时我们需要记录p、q各走的步数，用以确定
 	环的入口点
 */
-struct Link {
-	union {
-		int data;
-	}type;
-	struct Link *next;
-};
-#include <stdio.h>
-Link *isLoop(Link *h) {
-	struct Link *fast = h, *slow = h;
-	while (slow&&fast&&fast->next) {
-		slow = slow->next;
-		fast = fast->next->next;
-		if (slow == fast) {//再次相遇，说明有环
-			break;
-		}
-	}
-	if (slow==NULL||fast==NULL||fast->next==NULL) {
-		return NULL;
-	}
-	fast = h;
-	while (fast != slow) {
-		fast = fast->next;
-		slow = slow->next;
-	}
-	return fast;
-}
+//struct Link {
+//	union {
+//		int data;
+//	}type;
+//	struct Link *next;
+//};
+//#include <stdio.h>
+//Link *isLoop(Link *h) {
+//	struct Link *fast = h, *slow = h;
+//	while (slow&&fast&&fast->next) {
+//		slow = slow->next;
+//		fast = fast->next->next;
+//		if (slow == fast) {//再次相遇，说明有环
+//			break;
+//		}
+//	}
+//	if (slow==NULL||fast==NULL||fast->next==NULL) {
+//		return NULL;
+//	}
+//	fast = h;
+//	while (fast != slow) {
+//		fast = fast->next;
+//		slow = slow->next;
+//	}
+//	return fast;
+//}
 //int main() {
 //	struct Link *head,*l,*s;
 //	int count = 0;

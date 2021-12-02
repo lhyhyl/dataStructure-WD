@@ -387,5 +387,14 @@
     <ClCompile Include="BFS_MIN_Distance.cpp">
       <Filter>源文件\graph</Filter>
     </ClCompile>
+    <ClCompile Include="findMinofTrip.cpp">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
+    <ClCompile Include="printAllpathToLeaf.cpp">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="findMain.cpp">
+      <Filter>源文件\sequenceList</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

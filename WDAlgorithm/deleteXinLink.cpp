@@ -1,8 +1,8 @@
-///*
-//	设计一个递归算法，删除一个不带头结点的单链表中所有值为x的节点
-//	分析：
-//		首先我们要创建单链表，并赋值，然后递归去判断值，进行删除
-//*/
+/*
+	设计一个递归算法，删除一个不带头结点的单链表中所有值为x的节点
+	分析：
+		首先我们要创建单链表，并赋值，然后递归去判断值，进行删除
+*/
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -25,9 +25,10 @@
 //}
 //Link *create() {
 //	struct Link *p, *rear, *head;
-//	int count = 0;
-//	rear = (struct Link *)malloc(sizeof(struct Link));
 //	head = (struct Link *)malloc(sizeof(struct Link));
+//	rear = (struct Link *)malloc(sizeof(struct Link));
+//	head = NULL;
+//	rear = NULL;
 //	int value;
 //	printf("请输入链表各节点的值，以9999结束：");
 //	scanf("%d", &value);
@@ -35,7 +36,7 @@
 //		p = (struct Link *)malloc(sizeof(struct Link));//创建一个新的节点
 //		p->value = value;
 //		p->next = NULL;
-//		if (count++ == 0) {
+//		if (head == NULL) {
 //			rear = p;
 //			head = p;
 //		}
@@ -51,27 +52,21 @@
 //Link *create2() {
 //	struct Link *p, *rear, *head;
 //	head = (struct Link *)malloc(sizeof(struct Link));
-//	rear = (struct Link *)malloc(sizeof(struct Link));
-//	head = rear = NULL;
+//	head = NULL;
 //	int value;
 //	printf("请输入链表各节点的值，以9999结束：");
 //	scanf("%d", &value);
-//	int count = 0;
 //	while (value != 9999) {//依次创建节点
 //		p = (struct Link *)malloc(sizeof(struct Link));
 //		p->value = value;
-//		
+//		p->next = NULL;
 //		if (head == NULL) {
 //			head = p;
-//			rear = p;
 //		}
 //		else {
+//
 //			p->next = head->next;
 //			head->next = p;
-//			rear = p;
-//			if (count++==0) {
-//				rear->next = NULL;
-//			}
 //		}
 //
 //		scanf("%d", &value);
@@ -81,7 +76,7 @@
 //int main() {
 //	int delNum;
 //	struct Link *head, *q;
-//	head = create2();
+//	head = create();
 //	q = head;
 //	printf("打印链表：");
 //	while (q != NULL) {

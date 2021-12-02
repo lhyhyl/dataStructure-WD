@@ -169,8 +169,10 @@
     <ClCompile Include="findCommon2.cpp" />
     <ClCompile Include="findCommonSuffix.cpp" />
     <ClCompile Include="findKthInSq.cpp" />
+    <ClCompile Include="findMain.cpp" />
     <ClCompile Include="findMidNum.c" />
     <ClCompile Include="findMin.cpp" />
+    <ClCompile Include="findMinofTrip.cpp" />
     <ClCompile Include="findPre.cpp" />
     <ClCompile Include="findRoute.cpp" />
     <ClCompile Include="findTheReciprocalK.cpp" />
@@ -221,6 +223,7 @@
     <ClCompile Include="primInAL.cpp" />
     <ClCompile Include="primInAL2.cpp" />
     <ClCompile Include="primInAM.cpp" />
+    <ClCompile Include="printAllpathToLeaf.cpp" />
     <ClCompile Include="printfNowLink.cpp" />
     <ClCompile Include="putKtoCurPos.cpp" />
     <ClCompile Include="quickSort.cpp" />
