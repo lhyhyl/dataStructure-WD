@@ -8,10 +8,10 @@ struct biTree {
 	int ltag, rtag;//用于进行标记
 };
 #include <stdio.h>
-
-void inThread(biTree *p, biTree *pre ) {//中序线索二叉树
+extern biTree* pre = NULL;
+void inThread(biTree *p ) {//中序线索二叉树
 	if (p!=NULL) {
-		inThread(p->lchild,pre);
+		inThread(p->lchild);
 		if (p->lchild==NULL) {//如果左子树为空，建立前驱线索
 			p->lchild = pre;
 			p->ltag = 1;
@@ -21,10 +21,10 @@ void inThread(biTree *p, biTree *pre ) {//中序线索二叉树
 			pre->rtag = 1;
 		}
 		pre = p;
-		inThread(p->rchild,pre);
+		inThread(p->rchild);
 	}
 }
-void preThread(biTree *p, biTree *pre) {//先序线索二叉树
+void preThread(biTree *p) {//先序线索二叉树
 	if (p != NULL) {
 
 		if (p->lchild == NULL) {//如果左子树为空，建立前驱线索
@@ -36,14 +36,14 @@ void preThread(biTree *p, biTree *pre) {//先序线索二叉树
 			pre->rtag = 1;
 		}
 		pre = p;
-		inThread(p->lchild, pre);
-		inThread(p->rchild, pre);
+		inThread(p->lchild);
+		inThread(p->rchild);
 	}
 }
-void postThread(biTree *p, biTree *pre) {//后序线索二叉树
+void postThread(biTree *p) {//后序线索二叉树
 	if (p != NULL) {
-		inThread(p->lchild, pre);
-		inThread(p->rchild, pre);
+		inThread(p->lchild);
+		inThread(p->rchild);
 		if (p->lchild == NULL) {//如果左子树为空，建立前驱线索
 			p->lchild = pre;
 			p->ltag = 1;
