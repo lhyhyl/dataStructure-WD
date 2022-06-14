@@ -19,15 +19,15 @@
 //	}
 //
 //}
-//void delXsub(biTree *T, int x) {//这里设置一个父节点指针，因为free只会释放所在节点里面的内容，并不会置空
-//	struct biTree *p = T;
+//void delXsub(biTree *T, int x) {
+//	struct biTree *p = T;//这里设置一个父节点指针，因为free只会释放所在节点里面的内容，并不会置空
 //	if (p->lchild && p->lchild->data == x) {
-//		del(p->lchild);
-//		p->lchild = NULL;
+//		del(p->lchild);//删除该子树
+//		p->lchild = NULL;//节点置为空
 //	}
 //	if (p->rchild && p->rchild->data == x) {
-//		del(p->rchild);
-//		p->rchild = NULL;
+//		del(p->rchild);//删除该子树
+//		p->rchild = NULL;//节点置为空
 //	}
 //	if (p->lchild) delXsub(p->lchild, x);
 //	if (p->rchild) delXsub(p->rchild, x);

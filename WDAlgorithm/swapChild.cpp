@@ -18,10 +18,10 @@
 //	}
 //	else {
 //		swapTree(p->lchild);//交换左子树
+//		swapTree(p->rchild);//交换右子树   这里不能采取中序遍历
 //		t = p->lchild;
 //		p->lchild = p->rchild;
 //		p->rchild = t;
-//		swapTree(p->rchild);//交换右子树
 //	}
 //}
 //int main() {

@@ -36,8 +36,6 @@
 //			p = top(s);
 //			if (p->rchild&&r != p->rchild) {
 //				p = p->rchild;
-//				push(s, p);
-//				p = p->lchild;
 //			}
 //			else {
 //				printf("%c ", p->data);//ด๒ำกีปถฅิชหุ

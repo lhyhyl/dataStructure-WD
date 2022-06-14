@@ -2,8 +2,8 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>
-#define TYPE int
-//#define TYPE biTree*
+//#define TYPE int
+#define TYPE biTree*
 //#define TYPE char
 //#define TYPE Recursion
 struct biTree {
@@ -75,6 +75,13 @@ bool contain(Stack *stack, TYPE r) {
 		}
 	}
 	return false;
+}
+//´òÓ¡Õ»ÖÐÔªËØ
+void print(Stack *stack) {
+	if (empty(stack)) return;
+	for (int i = stack->top; i >= 0; i--) {
+		printf("%c",stack->arr[i]);
+	}
 }
 
 

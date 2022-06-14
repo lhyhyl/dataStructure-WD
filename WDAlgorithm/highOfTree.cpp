@@ -38,7 +38,6 @@
 //			return lhigh + 1;
 //		}
 //		else {
-//
 //			return rhigh;
 //		}
 //	}

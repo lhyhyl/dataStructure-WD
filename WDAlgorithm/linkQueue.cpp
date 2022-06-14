@@ -4,8 +4,8 @@
 		我们需要创建一个链表，然后设置front、rear指针，用来模拟入队出队的过程
 */
 //#define TYPE biTree* 
-//#define TYPE char
-#define TYPE int
+#define TYPE char
+//#define TYPE int
 struct biTree {//新增树节点
 	char data;
 	struct biTree *lchild;

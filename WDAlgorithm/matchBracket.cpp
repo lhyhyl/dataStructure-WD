@@ -17,12 +17,12 @@
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //bool matchBracket(LinkQueue *lq, Stack *s) {
-//	char letterQ, *letterS;
+//	char letterQ, letterS;
 //	bool isEmpty(LinkQueue *);
 //	bool deQueue(LinkQueue *, char *);
 //
 //	bool push(Stack *, char);
-//	char *top(Stack *);
+//	char top(Stack *);
 //	bool pop(Stack *);
 //	bool empty(Stack *);
 //	while (!isEmpty(lq)) {//如果队列不空
@@ -37,9 +37,9 @@
 //			letterS = top(s);
 //			pop(s);
 //			switch (letterQ) {
-//			case ')': if (*letterS != '(')return false; break;
-//			case ']': if (*letterS != '[' ) return false; break;
-//			case '}': if (*letterS != '{' ) return false; break;
+//			case ')': if (letterS != '(')return false; break;
+//			case ']': if (letterS != '[' ) return false; break;
+//			case '}': if (letterS != '{' ) return false; break;
 //			default:break;
 //			}
 //		}

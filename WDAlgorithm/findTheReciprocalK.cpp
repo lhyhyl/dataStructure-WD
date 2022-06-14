@@ -6,49 +6,49 @@
 		这里还有另一种更加便捷的方法，只需对链表遍历一次，我们设立两个指针，最开始均指向首节点，然后让q先移动k个节点，之后p
 		q同步移动，当q为NULL时，p所在的位置便是倒数第k个节点的位置
 */
-struct Link {
-	int data;
-	struct Link *next;
-};
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-int findTheReciprocalK(Link *h,int k) {//这是第一种解法
-	struct Link *p = h->next;
-	int count = 0,num;
-	while (p) {//统计元素个数
-		count++;
-		p = p->next;
-	}
-	p = h->next;
-	if (k > count) {
-		return 0;
-	}
-	else {
-		num = count - k + 1;
-		while (--num) {//这里要用--num，如果用num--，会导致p为下一个元素，注意
-			p = p->next;
-		}
-		printf("%d",p->data);
-		return 1;
-	}
-}
-int findTheReciprocalK2(Link *h,int k) {//这是第二种解法
-	struct Link *p = h->next, *q = h->next;
-	int count = k;
-	while (count--) {
-		if (q==NULL) {
-			printf("倒数第%d个节点不存在",k);
-			return 0;
-		}
-		q = q->next;
-	}
-	while (q!=NULL) {
-		p = p->next;
-		q = q->next;
-	}
-	printf("倒数第%d个节点值为：%d",k,p->data);
-	return 1;
-}
+//struct Link {
+//	int data;
+//	struct Link *next;
+//};
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//int findTheReciprocalK(Link *h,int k) {//这是第一种解法
+//	struct Link *p = h->next;
+//	int count = 0,num;
+//	while (p) {//统计元素个数
+//		count++;
+//		p = p->next;
+//	}
+//	p = h->next;
+//	if (k > count) {
+//		return 0;
+//	}
+//	else {
+//		num = count - k + 1;
+//		while (--num) {//这里要用--num，如果用num--，会导致p为下一个元素，注意
+//			p = p->next;
+//		}
+//		printf("%d",p->data);
+//		return 1;
+//	}
+//}
+//int findTheReciprocalK2(Link *h,int k) {//这是第二种解法
+//	struct Link *p = h->next, *q = h->next;
+//	int count = k;
+//	while (count--) {
+//		if (q==NULL) {
+//			printf("倒数第%d个节点不存在",k);
+//			return 0;
+//		}
+//		q = q->next;
+//	}
+//	while (q!=NULL) {
+//		p = p->next;
+//		q = q->next;
+//	}
+//	printf("倒数第%d个节点值为：%d",k,p->data);
+//	return 1;
+//}
 //int main() {
 //	int k;
 //	struct Link *head;
