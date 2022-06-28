@@ -33,7 +33,7 @@ typedef struct {
 }ALGraph;
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 void createGraph(ALGraph *G) {
 	int e, v, vi, vj, w;
 	printf("请输入图的边数与结点数（以空格分开）：");
@@ -100,20 +100,27 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 			}
 		}
 		else {//开始依次存储边信息
-			fgets(ev, 4, fp);//同样先吃掉换行符
-			fgets(arc, 6, fp);//读取该行的边信息
+			fgets(arc, 16, fp);//读取该行的边信息
+			if (arc[0] == 10) fgets(arc, 16, fp);//如果是"/n"，则取出下一行
+			char* start = strtok(arc, " ");
+			char* end = NULL, * weight = NULL;
+			if (start) end = strtok(NULL, " ");
+			if (end) weight = strtok(NULL, " ");
+			weight[strlen(weight) - 1] = ' ';
+			weight = strtok(weight, " ");
+
 			EdgeNode *e = (EdgeNode *)malloc(sizeof(struct EdgeNode ));
-			e->index = atoi(&arc[2]) - 1;//数组下标要减一
-			e->weight = atoi(&arc[4]);
-			e->next = G->adjlist[atoi(&arc[0])-1].firstEdge;//采用头插法
-			G->adjlist[atoi(&arc[0])-1].firstEdge = e;
+			e->index = atoi(start) - 1;//数组下标要减一
+			e->weight = atoi(weight);
+			e->next = G->adjlist[atoi(start)].firstEdge;//采用头插法
+			G->adjlist[atoi(start)].firstEdge = e;
 			
 			//下面与上面相似，目的在于构建无向图
 			//EdgeNode *otherE = (EdgeNode *)malloc(sizeof(struct EdgeNode ));
-			//otherE->index = atoi(&arc[0]) - 1;//数组下标要减一
-			//otherE->weight = atoi(&arc[4]);
-			//otherE->next = G->adjlist[atoi(&arc[2]) - 1].firstEdge;
-			//G->adjlist[atoi(&arc[2]) - 1].firstEdge = otherE;
+			//otherE->index = atoi(start) - 1;//数组下标要减一
+			//otherE->weight = atoi(weight);
+			//otherE->next = G->adjlist[atoi(end) - 1].firstEdge;
+			//G->adjlist[atoi(end) - 1].firstEdge = otherE;
 		}
 
 	}
