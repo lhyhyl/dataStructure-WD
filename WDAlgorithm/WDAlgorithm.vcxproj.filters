@@ -402,5 +402,8 @@
     <ClCompile Include="findMinZ.cpp">
       <Filter>源文件\sequenceList</Filter>
     </ClCompile>
+    <ClCompile Include="ELPath.cpp">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

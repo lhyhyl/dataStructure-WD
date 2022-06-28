@@ -10,13 +10,14 @@
 #define TYPE int
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 typedef struct Graph {
 	TYPE Vertex[MAXSIZE];
 	int Edge[MAXSIZE][MAXSIZE];
 	int numV, numE;//顶点、边数量
 }adjMatrix;
 
-void createGraph(adjMatrix *G) {
+void createGraph(adjMatrix* G) {
 	int v, e, vi, vj, w;
 	printf("请输入创建的图的顶点与边个数（以空格分开）：");
 	scanf("%d %d", &v, &e);
@@ -42,29 +43,29 @@ void createGraph(adjMatrix *G) {
 	}
 
 }
-void createGraphFromFile(adjMatrix *G) {
-	FILE *fp;//创建文件指针
+void createGraphFromFile(adjMatrix* G) {
+	FILE* fp;//创建文件指针
 	char ev[4] = {};
 	char numE[3] = { 0 };//边个数信息
 	char numV[3] = { 0 };//顶点个数信息
-	char arc[6] = { 0 };//边信息
-	char *vertex;//顶点信息，名称
+	char arc[16] = { 0 };//边信息
+	char* vertex;//顶点信息，名称
 	fp = fopen("graph.txt", "r");//打开文件
 	if (fp == NULL) {
 		printf("该文件无法打开！");
 		return;
 	}
-	fscanf(fp,"%hu %hu", numE, numV);//读取第一行
+	fscanf(fp, "%hu %hu", numE, numV);//读取第一行
 	G->numE = numE[0];
 	G->numV = numV[0];
 
-	//初始化图
+	//初始化图  
 	for (int i = 0; i < G->numV; i++) {
 		for (int j = 0; j < G->numV; j++) {
 			i == j ? G->Edge[i][j] = 0 : G->Edge[i][j] = 32767;
 		}
 	}
-	vertex = (char *)malloc(sizeof(char*)*G->numV);//这是用来存储顶点信息的数组（顶点的名字）
+	vertex = (char*)malloc(sizeof(char*) * G->numV);//这是用来存储顶点信息的数组（顶点的名字）
 	for (int i = 0; i <= G->numE; i++) {//开始获取后面的信息
 		if (i == 0) {//此时，根据我们文件的结构，第二行是顶点信息
 			fgets(ev, 4, fp);//获取回车符，上一次fgets后会停在回车符那儿
@@ -81,17 +82,23 @@ void createGraphFromFile(adjMatrix *G) {
 			}
 		}
 		else {//开始依次存储边信息
-			fgets(ev, 4, fp);//同样先吃掉换行符
-			fgets(arc, 6, fp);//读取该行的边信息
-			G->Edge[(int)arc[0] - 48 - 1][(int)arc[2] - 48 - 1] = (int)arc[4] - 48;
-			G->Edge[(int)arc[2] - 48 - 1][(int)arc[0] - 48 - 1] = (int)arc[4] - 48;
+			fgets(arc, 16, fp);//读取该行的边信息
+			if(arc[0] == 10) fgets(arc, 16, fp);//如果是"/n"，则取出下一行
+			char* start = strtok(arc, " ");
+			char* end = NULL, * weight = NULL;
+			if (start) end = strtok(NULL, " ");
+			if (end) weight = strtok(NULL, " ");
+			weight[strlen(weight) - 1] = ' ';
+			weight = strtok(weight," ");
+			G->Edge[atoi(start) - 1][atoi(end)- 1] = atoi(weight);
+			G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
 		}
 
 	}
 	fclose(fp);
 
 }
-void dispGraph(adjMatrix *G) {
+void dispGraph(adjMatrix* G) {
 	int i, j;
 	printf("\n输出顶点的信息（字符）:\n");
 	for (i = 0; i < G->numV; i++)
