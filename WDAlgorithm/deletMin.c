@@ -9,6 +9,7 @@
 //*/
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
+//#include <stdlib.h>
 //int deleteMin(int *arr,int len) {
 //	if (!len) return ;//数组为空，退出运行
 //	int minPos=0,min=*arr;
