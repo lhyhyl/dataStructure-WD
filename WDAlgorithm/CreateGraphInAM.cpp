@@ -50,7 +50,7 @@ void createGraphFromFile(adjMatrix* G) {
 	char numV[3] = { 0 };//顶点个数信息
 	char arc[16] = { 0 };//边信息
 	char* vertex;//顶点信息，名称
-	fp = fopen("graph.txt", "r");//打开文件
+	fp = fopen("graphAM.txt", "r");//打开文件
 	if (fp == NULL) {
 		printf("该文件无法打开！");
 		return;
@@ -91,7 +91,7 @@ void createGraphFromFile(adjMatrix* G) {
 			weight[strlen(weight) - 1] = ' ';
 			weight = strtok(weight," ");
 			G->Edge[atoi(start) - 1][atoi(end)- 1] = atoi(weight);
-			G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
+			//G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
 		}
 
 	}

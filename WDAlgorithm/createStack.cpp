@@ -17,7 +17,7 @@ struct Recursion {
 };
 struct Stack
 {
-	TYPE* arr;	//内存首地址
+	TYPE *arr;	//内存首地址
 	int  len;	//栈的容量
 	int top; 	//栈的下标
 };

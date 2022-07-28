@@ -31,6 +31,9 @@
     <Filter Include="源文件\sort">
       <UniqueIdentifier>{465d1eb1-80aa-4c21-90ee-c04e03dacb6b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\string">
+      <UniqueIdentifier>{509f915b-9471-46aa-834f-80695c88eaad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="revertSquence.c">
@@ -404,6 +407,12 @@
     </ClCompile>
     <ClCompile Include="ELPath.cpp">
       <Filter>源文件\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="kmp.cpp">
+      <Filter>源文件\string</Filter>
+    </ClCompile>
+    <ClCompile Include="haffumanTree.cpp">
+      <Filter>源文件\tree</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

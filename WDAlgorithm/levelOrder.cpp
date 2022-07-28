@@ -6,34 +6,31 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
-//struct Squeue {
-//	biTree *arr;
-//	int front, rear;
-//};
+//extern struct Squeue{};
 //#include <stdio.h>
 //#include <stdlib.h>
+////#include "createSequentialQueue.cpp"
 //void levelOrder(biTree *T,Squeue *sq,int maxSize) {
-//	struct biTree *p = T;
-//	struct biTree *r = (struct biTree *)malloc(sizeof(struct biTree));
-//	bool enQueueS(Squeue *, biTree *, int);
+//	struct biTree *p = T;//工作指针
+//	struct biTree *r = ( biTree *)malloc(sizeof( biTree));//暂存指针
+//	bool enQueue(Squeue *, biTree *, int);
 //	bool isEmpty(Squeue *);
-//	bool deQueueS(Squeue *, biTree *,int);
-//	enQueueS(sq,p,maxSize);
+//	bool deQueue(Squeue *, biTree **,int);
+//	enQueue(sq,p,maxSize);//根节点入队
 //	while (!isEmpty(sq)) {
-//		deQueueS(sq,r,maxSize);
+//		deQueue(sq,&r,maxSize);
 //		printf("%c ",r->data);
-//		if(r->lchild)enQueueS(sq, r->lchild, maxSize);
-//		if (r->rchild)enQueueS(sq, r->rchild, maxSize);
+//		if(r->lchild)enQueue(sq, r->lchild, maxSize);
+//		if (r->rchild)enQueue(sq, r->rchild, maxSize);
 //	}
 //}
 //int main() {
 //	int count = 0;
-//	struct biTree *T = (struct biTree *)malloc(sizeof(struct biTree));
-//	struct Squeue *sq = (struct Squeue *)malloc(sizeof(struct Squeue));
-//
+//	biTree *T = ( biTree *)malloc(sizeof( biTree));
+//	Squeue *sq = ( Squeue *)malloc(sizeof( Squeue));
 //	biTree *create(biTree *);
 //	void nodeNum(biTree *,int *);
 //

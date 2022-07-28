@@ -186,6 +186,7 @@
     <ClCompile Include="createCSTree_degree.cpp" />
     <ClCompile Include="getHigh.cpp" />
     <ClCompile Include="getWidth.cpp" />
+    <ClCompile Include="haffumanTree.cpp" />
     <ClCompile Include="halfSearch.cpp" />
     <ClCompile Include="haveRoute.cpp" />
     <ClCompile Include="heapSort.cpp" />
@@ -201,6 +202,7 @@
     <ClCompile Include="isSymmetry.cpp" />
     <ClCompile Include="isTree.cpp" />
     <ClCompile Include="judgeMinHeap.cpp" />
+    <ClCompile Include="kmp.cpp" />
     <ClCompile Include="kruskal.cpp" />
     <ClCompile Include="leafLink.cpp" />
     <ClCompile Include="levelInSortTree.cpp" />

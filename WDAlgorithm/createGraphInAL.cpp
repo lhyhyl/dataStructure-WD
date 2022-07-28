@@ -72,9 +72,9 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 	char ev[4] = {};
 	char numE[3] = { 0 };//顶点，边个数信息
 	char numV[3] = { 0 };//顶点，边个数信息
-	char arc[6] = { 0 };//边信息
+	char arc[10] = { 0 };//边信息
 	char *vertex;//顶点信息，名称
-	fp = fopen("graph.txt", "r");//打开文件
+	fp = fopen("graphAL.txt", "r");//打开文件
 	if (fp == NULL) {
 		printf("该文件无法打开！");
 		return;
@@ -102,18 +102,18 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 		else {//开始依次存储边信息
 			fgets(arc, 16, fp);//读取该行的边信息
 			if (arc[0] == 10) fgets(arc, 16, fp);//如果是"/n"，则取出下一行
-			char* start = strtok(arc, " ");
+			char* start = strtok(arc, " ");//获取start
 			char* end = NULL, * weight = NULL;
-			if (start) end = strtok(NULL, " ");
-			if (end) weight = strtok(NULL, " ");
-			weight[strlen(weight) - 1] = ' ';
-			weight = strtok(weight, " ");
+			if (start) end = strtok(NULL, " ");//获取end
+			if (end) weight = strtok(NULL, " ");//获取weight
+			weight[strlen(weight) - 1] = ' ';//将换行符替换为“”
+			weight = strtok(weight, " ");//获取weight值
 
-			EdgeNode *e = (EdgeNode *)malloc(sizeof(struct EdgeNode ));
-			e->index = atoi(start) - 1;//数组下标要减一
-			e->weight = atoi(weight);
-			e->next = G->adjlist[atoi(start)].firstEdge;//采用头插法
-			G->adjlist[atoi(start)].firstEdge = e;
+			EdgeNode *e = (EdgeNode*)malloc(sizeof(EdgeNode));
+			e->index = atoi(end) - 1;//当前节点所指向的节点下标，数组下标要减一
+			e->weight = atoi(weight);//字符串转化为数字类型
+			e->next = G->adjlist[atoi(start) - 1].firstEdge;//采用头插法
+			G->adjlist[atoi(start) - 1].firstEdge = e;
 			
 			//下面与上面相似，目的在于构建无向图
 			//EdgeNode *otherE = (EdgeNode *)malloc(sizeof(struct EdgeNode ));

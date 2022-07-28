@@ -1,6 +1,6 @@
-/*
-	寻找主元素
-*/
+///*
+//	寻找主元素
+//*/
 //#include <stdio.h>
 //
 //int findMain(int *arr, int len) {
@@ -34,7 +34,7 @@
 //
 //}
 //int main() {
-//	int arr[] = { 0,5,5,3,5,1,5,7 };
+//	int arr[] = { 1,5,5,5,5,5,5,5 };
 //	int mainNum;
 //	mainNum = findMain(arr, 8);
 //	printf("%d", mainNum);

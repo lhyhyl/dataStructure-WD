@@ -9,8 +9,8 @@
 
 struct biTree {
 	char data;
-	struct biTree *lchild;
-	struct biTree *rchild;
+	biTree *lchild;
+	biTree *rchild;
 };
 struct Squeue {
 	TYPE *arr;
@@ -18,7 +18,7 @@ struct Squeue {
 };
 //创建队列
 Squeue *createQueue(int n) {
-	struct Squeue *sq = (struct Squeue *)malloc(sizeof(struct Squeue));
+	Squeue *sq = ( Squeue *)malloc(sizeof( Squeue));
 	sq->arr = (TYPE *)malloc(sizeof(TYPE)*n);//数组大小
 	sq->front = 0;
 	sq->rear = 0;
