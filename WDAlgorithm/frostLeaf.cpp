@@ -41,7 +41,7 @@
 //	}
 //}
 //int main() {
-//	Tree *T = (Tree *)malloc(sizeof(Tree *));
+//	Tree *T = (Tree *)malloc(sizeof(Tree));
 //	T = create(T);
 //	printf("该森林的叶子结点个数为：%d", frostLeaf(T));
 //	return 0;

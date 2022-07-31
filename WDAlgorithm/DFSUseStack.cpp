@@ -82,7 +82,7 @@
 //	void dispGraph(ALGraph *);
 //	createGraphInFile(&G);//´´½¨Í¼
 //	dispGraph(&G);
-//	Stack *s = (Stack *)malloc(sizeof(Stack *));
+//	Stack *s = (Stack *)malloc(sizeof(Stack));
 //	Stack *createStack(int);
 //	s = createStack(G.numV);
 //	DFSUseStack(&G, s);

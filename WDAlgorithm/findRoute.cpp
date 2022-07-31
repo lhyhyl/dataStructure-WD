@@ -46,7 +46,7 @@
 //}
 //int main() {
 //	void createGraphInFile(ALGraph *G);
-//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph *));
+//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph));
 //	void dispGraph(ALGraph *);
 //	createGraphInFile(G);//´´½¨Í¼
 //	int vi, vj;

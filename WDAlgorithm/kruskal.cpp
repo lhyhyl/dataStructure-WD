@@ -52,7 +52,7 @@
 //		fa[i] = i;//最开始将每个节点的祖先设置为自己
 //	}
 //	for (int i = 0; i < G->numV; i++) {
-//		weights[i] = (int *)malloc(sizeof(int *)*G->numV);
+//		weights[i] = (int *)malloc(sizeof(int)*G->numV);
 //	}
 //	for (int i = 0; i < G->numV; i++) {
 //		for (int j = 0; j < G->numV; j++) {
@@ -82,7 +82,7 @@
 //
 //}
 //int main() {
-//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph *));
+//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph));
 //	void createGraphInFile(ALGraph *);
 //	void dispGraph(ALGraph *);
 //	createGraphInFile(G);//创建图

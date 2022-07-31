@@ -18,7 +18,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //void findAncestor(Stack *s, biTree *m, biTree *x) {
-//	struct biTree *r = (struct biTree *)malloc(sizeof(struct biTree));
+//	biTree *r = (biTree *)malloc(sizeof(biTree));
 //	bool empty(Stack *);
 //	bool push(Stack *, biTree*);
 //	bool pop(Stack *);
@@ -49,7 +49,7 @@
 //}
 //void findNearestAncestor(biTree *T, biTree *p, biTree *q, biTree **r) {
 //	int count = 0;
-//	struct biTree *m = T;//另起指针m，指向根节点
+//	biTree *m = T;//另起指针m，指向根节点
 //	void nodeNum(biTree *, int *);
 //	nodeNum(T, &count);//统计节点个数
 //	struct Stack *sp, *sq;
@@ -77,8 +77,8 @@
 //}
 //int main() {
 //	int count = 0;
-//	struct biTree *T = (struct biTree *)malloc(sizeof(struct biTree)), *p, *q;
-//	struct biTree *r = (struct biTree *)malloc(sizeof(struct biTree));
+//	biTree *T = (biTree *)malloc(sizeof(biTree)), *p, *q;
+//	biTree *r = (biTree *)malloc(sizeof(biTree));
 //	biTree *create(biTree *);
 //
 //	T = create(T);

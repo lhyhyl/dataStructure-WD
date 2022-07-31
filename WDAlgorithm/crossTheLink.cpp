@@ -17,7 +17,7 @@
 //void crossTheLink(Link *h) {
 //	void reverse(Link *);
 //	struct Link *fast = h->next, *slow = h->next,*mid;
-//	mid = (struct Link*)malloc(sizeof(struct Link));
+//	mid = (Link*)malloc(sizeof(Link));
 //	while (fast->next&&fast->next->next) {//寻找中间节点
 //		fast = fast->next->next;
 //		slow = slow->next;

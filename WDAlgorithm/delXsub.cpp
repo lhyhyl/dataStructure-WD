@@ -36,7 +36,7 @@
 //}
 //int main() {
 //	char x;
-//	struct biTree *T = (struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *T = (biTree*)malloc(sizeof(biTree));
 //	biTree *create(biTree *);
 //	void inOrder(biTree *);
 //	T = create(T);//创建一颗二叉树

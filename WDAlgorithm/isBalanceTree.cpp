@@ -43,7 +43,7 @@
 //	return false;//前面一直未返回true，那就不是平衡二叉树
 //}
 //int main() {
-//	Tree *T = (Tree *)malloc(sizeof(Tree *));
+//	Tree *T = (Tree *)malloc(sizeof(Tree));
 //	T = create(T);//创建一颗二叉树
 //	int depth = 0;
 //	isAVL(T, &depth) ? printf("是二叉平衡树"):printf("不是二叉平衡树");

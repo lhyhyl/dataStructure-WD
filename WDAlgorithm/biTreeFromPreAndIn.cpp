@@ -17,7 +17,7 @@
 //biTree *preInCreate(char *arrIn,char *arrPre,int l1,int h1,int l2,int h2) {
 //	//l1 h1 为中序的第一和最后一个节点下标，l2 h2 为先序的第一和最后一个节点下标
 //	int llen, rlen,i;//左子树、右子树长度
-//	struct biTree *root = (struct biTree *)malloc(sizeof(struct biTree));
+//	 biTree *root = ( biTree *)malloc(sizeof( biTree));
 //	root->data = *(arrPre + l2);
 //	for (i = l1; *(arrIn + i) != root->data; i++);//找到根节点在中序序列的位置
 //	

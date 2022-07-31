@@ -21,9 +21,9 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //void levelOrder2(biTree *T, Squeue *sq, int maxSize) {
-//	struct Stack *s = (struct Stack *)malloc(sizeof(struct Stack));
-//	struct biTree *p = T;
-//	struct biTree *r = (struct biTree *)malloc(sizeof(struct biTree));
+//	Stack *s = (Stack *)malloc(sizeof(Stack));
+//	biTree *p = T;
+//	biTree *r = (biTree *)malloc(sizeof(biTree));
 //	bool enQueue(Squeue *, biTree *, int);
 //	bool isEmpty(Squeue *);
 //	bool deQueue(Squeue *, biTree **, int);
@@ -51,8 +51,8 @@
 //}
 //int main() {
 //	int count = 0;
-//	struct biTree *T = (struct biTree *)malloc(sizeof(struct biTree));
-//	struct Squeue *sq = (struct Squeue *)malloc(sizeof(struct Squeue));
+//	biTree *T = (biTree *)malloc(sizeof(biTree));
+//	Squeue *sq = (Squeue *)malloc(sizeof(Squeue));
 //
 //	biTree *create(biTree *);
 //	void nodeNum(biTree *, int *);

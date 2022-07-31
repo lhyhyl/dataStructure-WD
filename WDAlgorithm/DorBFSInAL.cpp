@@ -41,7 +41,7 @@
 //	for (int i = 0; i < G->numV; i++) {
 //		visited[i] = 0;
 //	}
-//	for (int i = 1; i < G->numV; i++) {//从第一个节点开始
+//	for (int i = 0; i < G->numV; i++) {//从第一个节点开始
 //		if (!visited[i]) {
 //			BFS(G, visited, i);
 //		}
@@ -52,7 +52,7 @@
 //	Squeue *createQueue(int);
 //	bool isEmpty(Squeue *);
 //	bool enQueue(Squeue *, TYPE, int);
-//	bool deQueue(Squeue *sq, TYPE *data, int maxSize);
+//	bool deQueue(Squeue *, TYPE *, int );
 //	Squeue *sq;
 //	sq = createQueue(G->numV);//创建队列
 //	printf("%c ", G->adjlist[v].info);//访问传进来的顶点
@@ -66,7 +66,6 @@
 //				printf("%c ", G->adjlist[w->index].info);
 //				visited[w->index] = 1;
 //				enQueue(sq, w->index, G->numV);
-//
 //			}
 //		}
 //	}
@@ -97,7 +96,7 @@
 //	}
 //}
 //int main() {
-//	ALGraph *graph = (ALGraph *)malloc(sizeof(ALGraph *));
+//	ALGraph *graph = (ALGraph *)malloc(sizeof(ALGraph));
 //	//声明函数
 //	void createGraph(ALGraph *);
 //	void createGraphInFile(ALGraph *);

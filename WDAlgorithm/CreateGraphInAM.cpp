@@ -50,7 +50,7 @@ void createGraphFromFile(adjMatrix* G) {
 	char numV[3] = { 0 };//顶点个数信息
 	char arc[16] = { 0 };//边信息
 	char* vertex;//顶点信息，名称
-	fp = fopen("graph.txt", "r");//打开文件
+	fp = fopen("graphAM.txt", "r");//打开文件
 	if (fp == NULL) {
 		printf("该文件无法打开！");
 		return;
@@ -65,7 +65,7 @@ void createGraphFromFile(adjMatrix* G) {
 			i == j ? G->Edge[i][j] = 0 : G->Edge[i][j] = 32767;
 		}
 	}
-	vertex = (char*)malloc(sizeof(char*) * G->numV);//这是用来存储顶点信息的数组（顶点的名字）
+	vertex = (char*)malloc(sizeof(char) * G->numV);//这是用来存储顶点信息的数组（顶点的名字）
 	for (int i = 0; i <= G->numE; i++) {//开始获取后面的信息
 		if (i == 0) {//此时，根据我们文件的结构，第二行是顶点信息
 			fgets(ev, 4, fp);//获取回车符，上一次fgets后会停在回车符那儿
@@ -91,7 +91,7 @@ void createGraphFromFile(adjMatrix* G) {
 			weight[strlen(weight) - 1] = ' ';
 			weight = strtok(weight," ");
 			G->Edge[atoi(start) - 1][atoi(end)- 1] = atoi(weight);
-			G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
+			//G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
 		}
 
 	}

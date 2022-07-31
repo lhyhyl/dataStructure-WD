@@ -17,7 +17,7 @@ struct Recursion {
 };
 struct Stack
 {
-	TYPE* arr;	//内存首地址
+	TYPE *arr;	//内存首地址
 	int  len;	//栈的容量
 	int top; 	//栈的下标
 };
@@ -25,7 +25,7 @@ struct Stack
 /* --------------以下为实现函数--------------------*/
 //创建一个栈
 Stack *createStack(int size) {
-	struct Stack *stack = (struct Stack*)malloc(sizeof(struct Stack));//给栈分配空间
+	Stack *stack = (Stack*)malloc(sizeof(Stack));//给栈分配空间
 	stack->arr = (TYPE *)malloc(sizeof(TYPE)*size);//给内存首地址分配空间，大小用户指定
 	stack->len = size;//栈容量
 	stack->top = -1;//栈顶下标，当前无元素，故为-1

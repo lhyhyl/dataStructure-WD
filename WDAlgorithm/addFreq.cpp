@@ -54,7 +54,7 @@
 //}
 //int main() {
 //	int n, data,num;
-//	struct Link *head = (struct Link *)malloc(sizeof(struct Link));
+//	 Link *head = ( Link *)malloc(sizeof( Link));
 //	head->next = NULL;
 //	head->pre = NULL;
 //	struct Link *p = head;
@@ -63,7 +63,7 @@
 //	for (int i = 0; i < n; i++) {
 //		printf("请输入第%d个节点值:", i + 1);
 //		scanf("%d", &data);
-//		struct Link *newP = (struct Link*)malloc(sizeof(struct Link));
+//		 Link *newP = ( Link*)malloc(sizeof( Link));
 //		newP->data = data;
 //		newP->pre = p;
 //		newP->freq = 0;

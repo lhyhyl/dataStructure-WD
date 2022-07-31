@@ -17,8 +17,8 @@
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
-//struct biTree *h = (struct biTree *)malloc(sizeof(struct biTree));//创建一个头结点
-//struct biTree *pre = h;
+//biTree *h = (biTree *)malloc(sizeof(biTree));//创建一个头结点
+//biTree *pre = h;
 //biTree *leafLink(biTree *b) {//将二叉树b中的所有叶子结点连起来
 //	if (b) {
 //		leafLink(b->lchild);//中序遍历左子树
@@ -33,7 +33,7 @@
 //	return h;
 //}
 //int main() {
-//	struct biTree *b = (struct biTree *)malloc(sizeof(struct biTree ));
+//	biTree *b = (biTree *)malloc(sizeof(biTree ));
 //	biTree *create(biTree *);
 //	b = create(b);//创建一颗二叉树
 //	leafLink(b);

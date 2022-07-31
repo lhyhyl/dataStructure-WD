@@ -33,7 +33,7 @@
 //int main() {
     //biTree* create(biTree*);//创建二叉树函数引入
     //void inThread(biTree*);//创建线索二叉树函数引入
-    //struct biTree* T = ( biTree*)malloc(sizeof( biTree));
+    //biTree* T = ( biTree*)malloc(sizeof( biTree));
     //T=create(T);//创建二叉树
     //if (T!=NULL) {
     //     inThread(T);//创建中序线索二叉树

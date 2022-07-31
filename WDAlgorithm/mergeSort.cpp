@@ -4,7 +4,7 @@
 //*/
 //#include <stdio.h>
 //#include <stdlib.h>
-//static int *arrB = (int *)malloc(sizeof(int *)*20);
+//static int *arrB = (int *)malloc(sizeof(int)*20);
 //void merge(int *arr, int low, int mid, int high) {//“ª¥ŒπÈ≤¢≈≈–Ú
 //	int k, m, n;
 //	for (int i = low; i <= high; i++) {

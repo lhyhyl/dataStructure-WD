@@ -43,7 +43,7 @@
 //		prims[i]=-1;//初始化为-100，代表没有顶点目前加入
 //	}
 //	for (int i = 0; i < G->numV; i++) {
-//		weights[i] = (int *)malloc(sizeof(int *)*G->numV);
+//		weights[i] = (int *)malloc(sizeof(int)*G->numV);
 //	}
 //	for (int i = 0; i < G->numV;i++) {
 //		for (int j = 0; j < G->numV;j++) {
@@ -53,7 +53,7 @@
 //	int weight= 32767;//权值数据
 //	int index = 0;
 //	int s;//记录当前找到的最小边的起始顶点
-//	EdgeNode *r=(EdgeNode *)malloc(sizeof(EdgeNode *));//记录当前找到的最小边的终点
+//	EdgeNode *r=(EdgeNode *)malloc(sizeof(EdgeNode));//记录当前找到的最小边的终点
 //	prims[index++] = start;//先将start加入prims数组
 //	while (index != G->numV) {//顶点未全部加入prims数组，继续遍历
 //		for (int i = 0; i < index; i++) {//以prims数组中的值为起点找最小边
@@ -74,7 +74,7 @@
 //	outPut(G,weights);
 //}
 //int main() {
-//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph *));
+//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph));
 //	void createGraphInFile(ALGraph *);
 //	void dispGraph(ALGraph *);
 //	createGraphInFile(G);//创建图

@@ -35,7 +35,7 @@
 //	h = l;
 //}
 //int main() {
-//	struct Link *head = (struct Link*) malloc(sizeof(struct Link));
+//	Link *head = (Link*) malloc(sizeof(Link));
 //	Link *createLink(int);
 //	head = createLink(0);
 //	reverse(head);

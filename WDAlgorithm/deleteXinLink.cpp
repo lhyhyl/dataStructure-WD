@@ -25,15 +25,15 @@
 //}
 //Link *create() {
 //	struct Link *p, *rear, *head;
-//	head = (struct Link *)malloc(sizeof(struct Link));
-//	rear = (struct Link *)malloc(sizeof(struct Link));
+//	head = (Link *)malloc(sizeof(Link));
+//	rear = (Link *)malloc(sizeof(Link));
 //	head = NULL;
 //	rear = NULL;
 //	int value;
 //	printf("请输入链表各节点的值，以9999结束：");
 //	scanf("%d", &value);
 //	while (value != 9999) {//依次创建节点
-//		p = (struct Link *)malloc(sizeof(struct Link));//创建一个新的节点
+//		p = (Link *)malloc(sizeof(Link));//创建一个新的节点
 //		p->value = value;
 //		p->next = NULL;
 //		if (head == NULL) {
@@ -51,13 +51,13 @@
 //}
 //Link *create2() {
 //	struct Link *p, *rear, *head;
-//	head = (struct Link *)malloc(sizeof(struct Link));
+//	head = (Link *)malloc(sizeof(Link));
 //	head = NULL;
 //	int value;
 //	printf("请输入链表各节点的值，以9999结束：");
 //	scanf("%d", &value);
 //	while (value != 9999) {//依次创建节点
-//		p = (struct Link *)malloc(sizeof(struct Link));
+//		p = (Link *)malloc(sizeof(Link));
 //		p->value = value;
 //		p->next = NULL;
 //		if (head == NULL) {
