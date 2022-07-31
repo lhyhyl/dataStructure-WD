@@ -8,7 +8,7 @@ struct Link {
 };
 Link *createDouLoopLink() {
 	int n, data;
-	struct Link *head = (struct Link *)malloc(sizeof(struct Link));
+	Link *head = (Link *)malloc(sizeof(Link));
 	head->next = NULL;
 	head->pre = NULL;
 	struct Link *p = head;
@@ -17,7 +17,7 @@ Link *createDouLoopLink() {
 	for (int i = 0; i < n; i++) {
 		printf("请输入第%d个节点值:", i + 1);
 		scanf("%d", &data);
-		struct Link *newP = (struct Link*)malloc(sizeof(struct Link));
+		Link *newP = (Link*)malloc(sizeof(Link));
 		newP->data = data;
 		newP->pre = p;
 		p->next = newP;

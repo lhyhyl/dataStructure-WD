@@ -15,7 +15,7 @@
 //
 ////创建队列
 //Squeue *create(int n) {
-//	struct Squeue *sq = (struct Squeue *)malloc(sizeof(struct Squeue));
+//	Squeue *sq = (Squeue *)malloc(sizeof(Squeue));
 //	sq->arr = (TYPE *)malloc(sizeof(TYPE)*n);//数组大小
 //	sq->front = 0;
 //	sq->rear = 0;

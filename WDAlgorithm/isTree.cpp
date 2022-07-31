@@ -48,7 +48,7 @@
 //	}
 //}
 //int main() {
-//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph *));
+//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph));
 //	bool Tree;
 //	void createGraphInFile(ALGraph *);
 //	//void createGraph(ALGraph *);

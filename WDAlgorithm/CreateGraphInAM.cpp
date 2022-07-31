@@ -65,7 +65,7 @@ void createGraphFromFile(adjMatrix* G) {
 			i == j ? G->Edge[i][j] = 0 : G->Edge[i][j] = 32767;
 		}
 	}
-	vertex = (char*)malloc(sizeof(char*) * G->numV);//这是用来存储顶点信息的数组（顶点的名字）
+	vertex = (char*)malloc(sizeof(char) * G->numV);//这是用来存储顶点信息的数组（顶点的名字）
 	for (int i = 0; i <= G->numE; i++) {//开始获取后面的信息
 		if (i == 0) {//此时，根据我们文件的结构，第二行是顶点信息
 			fgets(ev, 4, fp);//获取回车符，上一次fgets后会停在回车符那儿

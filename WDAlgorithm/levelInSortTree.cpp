@@ -40,7 +40,7 @@
 //}
 //int main() {
 //	//创建一颗二叉排序树
-//	Tree *T = (Tree *)malloc(sizeof(Tree *));
+//	Tree *T = (Tree *)malloc(sizeof(Tree));
 //	T = create(T);
 //	int p = 7,depth=1;//手动指定节点值
 //	findLevel(T,p,depth);

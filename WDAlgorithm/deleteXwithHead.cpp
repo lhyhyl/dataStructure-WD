@@ -42,8 +42,8 @@
 //
 //int main() {
 //	//创建节点
-//	struct Link *head = (struct Link*)malloc(sizeof(struct Link));
-//	struct Link *q = (struct Link*)malloc(sizeof(struct Link));
+//	Link *head = (Link*)malloc(sizeof(Link));
+//	Link *q = (Link*)malloc(sizeof(Link));
 //	q = head;
 //	head->next = NULL;
 //	int n,data,delNum;
@@ -51,7 +51,7 @@
 //	scanf("%d",&n);
 //	for (int i = 0; i < n;i++) {
 //		printf("请输入第%d个节点值：",i+1);
-//		struct Link *p = (struct Link*)malloc(sizeof(struct Link));
+//		Link *p = (Link*)malloc(sizeof(Link));
 //		scanf("%d",&data);
 //		p->data = data;
 //		head->next = p;

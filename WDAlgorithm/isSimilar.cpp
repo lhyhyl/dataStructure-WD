@@ -27,8 +27,8 @@
 //
 //}
 //int main() {
-//	struct biTree *T1 = (struct biTree *)malloc(sizeof(struct biTree));
-//	struct biTree *T2 = (struct biTree *)malloc(sizeof(struct biTree));
+//	biTree *T1 = (biTree *)malloc(sizeof(biTree));
+//	biTree *T2 = (biTree *)malloc(sizeof(biTree));
 //
 //	biTree *create(biTree *);
 //	printf("第一棵树数据：\n");

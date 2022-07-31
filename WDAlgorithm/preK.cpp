@@ -27,7 +27,7 @@
 //}
 //int main() {
 //	int k, count = 0;
-//	struct biTree *T = (struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *T = (biTree*)malloc(sizeof(biTree));
 //	T->lchild = NULL;
 //	T->rchild = NULL;
 //	T->data = NULL;

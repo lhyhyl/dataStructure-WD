@@ -35,7 +35,7 @@
 //	Link *createLink(int);
 //	void printfNowLink(Link *);
 //	head = createLink(0);
-//	struct Link *b = (struct Link*)malloc(sizeof(struct Link));//开辟节点空间
+//	Link *b = (Link*)malloc(sizeof(Link));//开辟节点空间
 //	divide(b,head);
 //	printfNowLink(b);
 //	printf("\n");

@@ -31,7 +31,7 @@
 //}
 //int main() {
 //	int count = 0;
-//	struct biTree *T = (struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *T = (biTree*)malloc(sizeof(biTree));
 //	biTree *create(biTree *);
 //	T = create(T);//创建一颗二叉树
 //	char *path = (char*)malloc(sizeof(char) * 10);

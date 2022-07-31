@@ -9,7 +9,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //int main() {
-//	struct biTree *T = (struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *T = (biTree*)malloc(sizeof(biTree));
 //	biTree *create(biTree*);
 //	void preOrder(biTree*);
 //	void inOrder(biTree*);

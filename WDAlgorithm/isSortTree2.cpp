@@ -40,7 +40,7 @@
 //}
 //int main() {
 //	//先创建一颗二叉树
-//	Tree *T = (Tree *)malloc(sizeof(Tree *));
+//	Tree *T = (Tree *)malloc(sizeof(Tree));
 //	T = create(T);
 //	isSortTree(T) ? printf("是二叉排序树") : printf("不是二叉排序树");
 //	return 0;

@@ -20,7 +20,7 @@
 //#include <stdlib.h>
 //void postOrder(biTree *T, Stack *s) {//∫Û–Ú±È¿˙
 //	biTree *p = T;
-//	biTree *r = (struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *r = (biTree*)malloc(sizeof(biTree));
 //	bool empty(Stack *);
 //	bool push(Stack *, biTree *);
 //	biTree *top(Stack *);
@@ -47,8 +47,8 @@
 //}
 //int main() {
 //	int count = 0;
-//	struct biTree *T = (struct biTree *)malloc(sizeof(struct biTree));
-//	struct Stack *s = (struct Stack*)malloc(sizeof(struct Stack));
+//	biTree *T = (biTree *)malloc(sizeof(biTree));
+//	Stack *s = (Stack*)malloc(sizeof(Stack));
 //	biTree *create(biTree*);
 //	void nodeNum(biTree *, int *);
 //	Stack *createStack(int);

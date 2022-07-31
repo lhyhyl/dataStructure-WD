@@ -20,8 +20,8 @@
 //	bool enQueue(Squeue *, biTree *, int maxSize);
 //	bool deQueue(Squeue *, biTree **, int maxSize);
 //	bool isEmpty(Squeue *);
-//	struct biTree *p = T;
-//	struct biTree *r = (struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *p = T;
+//	biTree *r = ( biTree*)malloc(sizeof( biTree));
 //	enQueue(sq, p, maxSize);//根节点入队
 //	while (!isEmpty(sq)) {
 //		deQueue(sq, &r, maxSize);//取出队首元素
@@ -43,7 +43,7 @@
 //int main() {
 //	int count = 0;
 //	bool isCom;
-//	struct biTree *T = (struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *T = ( biTree*)malloc(sizeof( biTree));
 //	struct Squeue *sq;
 //
 //	biTree *create(biTree *);

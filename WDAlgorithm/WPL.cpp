@@ -42,7 +42,7 @@
 //	return totalWeight;
 //}
 //int main() {
-//	struct tree *T = (struct tree *)malloc(sizeof(struct tree));
+//	tree *T = (tree *)malloc(sizeof(tree));
 //	T = create(T);
 //	int depth = 0;
 //	int totalW;

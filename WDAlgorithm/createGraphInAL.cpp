@@ -53,13 +53,13 @@ void createGraph(ALGraph *G) {
 		printf("请输入边（vi，vj）的顶点序号及其权值（以空格分开）：");
 		scanf("%d %d %d", &vi, &vj, &w);
 		//若是无向图则需要两个顶点进行操作,采用头插法
-		EdgeNode *e = (EdgeNode *)malloc(sizeof(EdgeNode *));
+		EdgeNode *e = (EdgeNode *)malloc(sizeof(EdgeNode ));
 		e->index = vj - 1;//数组下标要减一
 		e->weight = w;
 		e->next = G->adjlist[vi - 1].firstEdge;
 		G->adjlist[vi - 1].firstEdge = e;
 
-		/*EdgeNode *ed = (EdgeNode *)malloc(sizeof(EdgeNode *));
+		/*EdgeNode *ed = (EdgeNode *)malloc(sizeof(EdgeNode ));
 		ed->index = vi - 1;
 		ed->weight = w;
 		ed->next = G->adjlist[vj - 1].firstEdge;
@@ -82,7 +82,7 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 	fscanf(fp, "%hu %hu", numE, numV);//读取第一行
 	G->numE = numE[0];
 	G->numV = numV[0];
-	vertex = (char *)malloc(sizeof(char*)*G->numV);//这是用来存储顶点信息的数组（顶点的名字）
+	vertex = (char *)malloc(sizeof(char)*G->numV);//这是用来存储顶点信息的数组（顶点的名字）
 	for (int i = 0; i <= G->numE; i++) {//开始获取后面的信息
 		if (i == 0) {//此时，根据我们文件的结构，第二行是顶点信息
 			fgets(ev, 4, fp);//获取回车符，上一次fgets后会停在回车符那儿
@@ -116,11 +116,11 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 			G->adjlist[atoi(start) - 1].firstEdge = e;
 			
 			//下面与上面相似，目的在于构建无向图
-			//EdgeNode *otherE = (EdgeNode *)malloc(sizeof(struct EdgeNode ));
-			//otherE->index = atoi(start) - 1;//数组下标要减一
-			//otherE->weight = atoi(weight);
-			//otherE->next = G->adjlist[atoi(end) - 1].firstEdge;
-			//G->adjlist[atoi(end) - 1].firstEdge = otherE;
+			EdgeNode *otherE = (EdgeNode *)malloc(sizeof( EdgeNode ));
+			otherE->index = atoi(start) - 1;//数组下标要减一
+			otherE->weight = atoi(weight);
+			otherE->next = G->adjlist[atoi(end) - 1].firstEdge;
+			G->adjlist[atoi(end) - 1].firstEdge = otherE;
 		}
 
 	}

@@ -70,7 +70,7 @@
 //	return isSort(T->left)&& isSort(T->right);//判断左子树//判断右子树
 //}
 //int main() {
-//	Tree *T = (Tree *)malloc(sizeof(Tree *));
+//	Tree *T = (Tree *)malloc(sizeof(Tree));
 //	T = create(T);
 //	isSort(T) ? printf("是二叉排序树"): printf("不是二叉排序树");
 //	return 0;

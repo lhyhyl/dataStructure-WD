@@ -17,7 +17,7 @@
 //	while (la) {
 //		while (lb) {
 //			if (la->data==lb->data) {//如果是公共元素
-//				struct Link *p = (struct Link*)malloc(sizeof(struct Link));
+//				Link *p = (Link*)malloc(sizeof(Link));
 //				p->data = la->data;
 //				rc->next = p;//采用尾插法
 //				rc = p;
@@ -31,10 +31,10 @@
 //	rc->next = NULL;//最后一个节点指针需要指向NULL。
 //}
 //void listCommon(Link *a,Link *b,Link *c) {
-//	struct Link *rc = c, *la = a->next, *lb = b->next;
+//	Link *rc = c, *la = a->next, *lb = b->next;
 //	while (la&&lb) {
 //		if (la->data==lb->data) {
-//			struct Link *p = (struct Link*)malloc(sizeof(struct Link));
+//			Link *p = (Link*)malloc(sizeof(Link));
 //			p->data = la->data;
 //			p->next = NULL;
 //			rc->next = p;
@@ -49,12 +49,12 @@
 //	rc->next = NULL;
 //}
 //int main() {
-//	struct Link *a, *b;
+//	Link *a, *b;
 //	Link *createLink(int);
 //	void printfNowLink(Link *);
 //	a = createLink(0);
 //	b = createLink(0);
-//	struct Link *c = (struct Link*)malloc(sizeof(struct Link));
+//	Link *c = (Link*)malloc(sizeof(Link));
 //	c->next = NULL;
 //	//linkCommon(a,b,c);
 //	listCommon(a,b,c);

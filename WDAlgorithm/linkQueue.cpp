@@ -27,16 +27,16 @@ struct LinkQueue {
 Link* createLink() {
 	int n, data;
 	char letter;
-	struct Link *q;
-	struct Link *head = (struct Link*) malloc(sizeof(struct Link));
+	Link *q;
+	Link *head = (Link*) malloc(sizeof(Link));
 	head->next = NULL;
 	q = head;
 	return head;
 }
 //创建链队
 LinkQueue *create() {
-	struct Link *h,*p;
-	struct LinkQueue *lq=(struct LinkQueue *)malloc(sizeof(struct LinkQueue));
+	Link *h,*p;
+	LinkQueue *lq=(LinkQueue *)malloc(sizeof(LinkQueue));
 	h = createLink();
 	p = h->next;
 	lq->front = lq->rear = h;
@@ -48,7 +48,7 @@ bool isEmpty(LinkQueue *lq) {
 }
 //入队
 bool enQueue(LinkQueue *lq,TYPE data) {//队尾插入
-	struct Link *newd = (struct Link *)malloc(sizeof(struct Link));
+	Link *newd = (Link *)malloc(sizeof(Link));
 	newd->node = data;
 	lq->rear->next = newd;
 	lq->rear = newd;
@@ -58,7 +58,7 @@ bool enQueue(LinkQueue *lq,TYPE data) {//队尾插入
 //出队
 bool deQueue(LinkQueue *lq,TYPE *data) {
 	if (isEmpty(lq))return false;
-	struct Link *p = lq->front->next;//保存下一个节点
+	Link *p = lq->front->next;//保存下一个节点
 	*data = lq->front->next->node;//取出队首节点值
 	lq->front->next = p->next;//删除队首节点
 	if (lq->rear==p) {

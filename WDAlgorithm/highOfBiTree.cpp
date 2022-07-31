@@ -20,8 +20,8 @@
 //
 //int getHigh(biTree *T,Squeue *sq,int maxSize) {
 //	int oldNum=0,curNum=0,high=0;//记录一层有多少节点
-//	struct biTree *p = T;
-//	struct biTree *r=(struct biTree *)malloc(sizeof(struct biTree));
+//	biTree *p = T;
+//	biTree *r=(biTree *)malloc(sizeof(biTree));
 //	bool enQueue(Squeue *, biTree *, int );
 //	bool isEmpty(Squeue *);
 //	bool deQueue(Squeue *, biTree **, int);
@@ -51,8 +51,8 @@
 //int main() {
 //	int count=0;
 //	//创建二叉树、队列
-//	struct biTree *T=(struct biTree *)malloc(sizeof(struct biTree));
-//	struct Squeue *sq;
+//	biTree *T=(biTree *)malloc(sizeof(biTree));
+//	Squeue *sq;
 //	biTree *create(biTree *);
 //	void nodeNum(biTree *,int *);
 //	Squeue *createQueue(int);

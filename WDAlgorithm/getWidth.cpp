@@ -21,8 +21,8 @@
 //	bool enQueue(LinkQueue *lq, biTree *node);
 //	bool deQueue(LinkQueue *lq, biTree **node);
 //	bool isEmpty(LinkQueue *lq);
-//	struct biTree *p = b;
-//	struct biTree *r=(struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *p = b;
+//	biTree *r=(biTree*)malloc(sizeof(biTree));
 //	if (p) {
 //		enQueue(lq, p);//入队
 //		oldNum++;
@@ -49,8 +49,8 @@
 //	return width;
 //}
 //int main() {
-//	struct biTree *b = (struct biTree*)malloc(sizeof(struct biTree));
-//	struct LinkQueue *lq;
+//	biTree *b = (biTree*)malloc(sizeof(biTree));
+//	LinkQueue *lq;
 //
 //	biTree *create(biTree *);
 //	b = create(b);//创建一颗二叉树

@@ -16,9 +16,9 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //void findAllAncestor(biTree *T, Stack *s, char x) {
-//	struct biTree *p = T;
-//	struct biTree *r = (struct biTree *)malloc(sizeof(struct biTree));
-//	struct biTree *tp = (struct biTree *)malloc(sizeof(struct biTree));
+//	biTree *p = T;
+//	biTree *r = (biTree *)malloc(sizeof(biTree));
+//	biTree *tp = (biTree *)malloc(sizeof(biTree));
 //
 //	bool push(Stack *, biTree*);
 //	bool pop(Stack *);

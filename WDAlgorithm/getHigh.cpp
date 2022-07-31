@@ -16,7 +16,7 @@
 //
 //}
 //int main() {
-//	struct biTree *T = (biTree *)malloc(sizeof(biTree));
+//	biTree *T = (biTree *)malloc(sizeof(biTree));
 //	biTree *create(biTree *);
 //	T = create(T);
 //	printf("%d",getHigh(T));

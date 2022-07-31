@@ -44,7 +44,7 @@
 //	int degree[] = { 3,2,0,0,0,0 };
 //	node* *pointer = (node* *)malloc(sizeof(node*) * 6);
 //	for (int i = 0; i < 6; i++) {
-//		pointer[i] = (node*)malloc(sizeof(node*));
+//		pointer[i] = (node*)malloc(sizeof(node));
 //	}
 //	createCSTree_degree(level, degree, pointer, 6);
 //	inOrder(pointer[0]);

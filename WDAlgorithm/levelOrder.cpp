@@ -14,8 +14,8 @@
 //#include <stdlib.h>
 ////#include "createSequentialQueue.cpp"
 //void levelOrder(biTree *T,Squeue *sq,int maxSize) {
-//	struct biTree *p = T;//工作指针
-//	struct biTree *r = ( biTree *)malloc(sizeof( biTree));//暂存指针
+//	biTree *p = T;//工作指针
+//	biTree *r = ( biTree *)malloc(sizeof( biTree));//暂存指针
 //	bool enQueue(Squeue *, biTree *, int);
 //	bool isEmpty(Squeue *);
 //	bool deQueue(Squeue *, biTree **,int);
