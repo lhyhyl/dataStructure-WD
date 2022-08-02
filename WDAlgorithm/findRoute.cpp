@@ -24,7 +24,7 @@
 //	int numE, numV;//±ßÊý¡¢¶¥µãÊý
 //}ALGraph;
 //
-//void print(ALGraph *G, int *path, int vi,int d) {
+//void print(ALGraph *G, int *path,int d) {
 //	for (int i = 0; i <= d; i++)
 //		printf("%c ", G->adjlist[path[i]].info);
 //	printf("\n");
@@ -35,7 +35,7 @@
 //	path[d] = vi;
 //	visited[vi] = 1;
 //	if (vi == vj) {
-//		print(G, path, vi,d);
+//		print(G, path,d);
 //	}
 //	for (p = G->adjlist[vi].firstEdge; p;p=p->next) {
 //		if (!visited[p->index]) {
