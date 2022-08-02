@@ -43,35 +43,35 @@
 //		if (visited[i])
 //			continue;
 //		int v;
-//		printf("%c ", G->adjlist[i].info);
+//		//printf("%c ", G->adjlist[i].info);
 //		visited[i] = 1;
 //		push(s, i);//入栈
 //		EdgeNode *p;
 //		while (!empty(s)) {//栈内不空
 //			v = top(s);
 //			pop(s);
-//			p = G->adjlist[v].firstEdge;
-//			while (p) {
-//				if (!visited[p->index]) {
-//					printf("%c ", G->adjlist[p->index].info);
-//					visited[p->index] = 1;
-//					push(s, p->index);
-//					p = G->adjlist[p->index].firstEdge;//顺腾摸瓜
-//				}
-//				else {
-//					p = p->next;//摸到底了，平级顶点继续找
-//				}
-//			}
-//			if (p == NULL)
-//				pop(s);
-//			//printf("%c ", G->adjlist[v].info);
-//			//for (p = G->adjlist[v].firstEdge; p; p = p->next) {
+//			//p = G->adjlist[v].firstEdge;
+//			//while (p) {
 //			//	if (!visited[p->index]) {
-//			//		push(s, p->index);
+//			//		printf("%c ", G->adjlist[p->index].info);
 //			//		visited[p->index] = 1;
-//			//		//p = G->adjlist[p->index].firstEdge;//顺腾摸瓜
+//			//		push(s, p->index);
+//			//		p = G->adjlist[p->index].firstEdge;//顺腾摸瓜
+//			//	}
+//			//	else {
+//			//		p = p->next;//摸到底了，平级顶点继续找
 //			//	}
 //			//}
+//			//if (p == NULL)
+//			//	pop(s);
+//			printf("%c ", G->adjlist[v].info);
+//			for (p = G->adjlist[v].firstEdge; p; p = p->next) {
+//				if (!visited[p->index]) {
+//					push(s, p->index);
+//					visited[p->index] = 1;
+//					//p = G->adjlist[p->index].firstEdge;//顺腾摸瓜
+//				}
+//			}
 //		}
 //
 //	}

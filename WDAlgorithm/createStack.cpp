@@ -2,8 +2,8 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>
-//#define TYPE int
-#define TYPE biTree*
+#define TYPE int
+//#define TYPE biTree*
 //#define TYPE char
 //#define TYPE Recursion
 struct biTree {
