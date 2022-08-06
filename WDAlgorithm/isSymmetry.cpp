@@ -11,7 +11,7 @@
 //	union {
 //		char letter;
 //	}type;
-//	struct Link *next;
+//	Link *next;
 //};
 //struct Stack {
 //	char *arr;
@@ -32,7 +32,7 @@
 //	printf("请输入要创建的栈的大小：size=");
 //	scanf("%d",&size);
 //	s = createStack(size);
-//	struct Link *fast = h->next, *slow = h->next;
+//	Link *fast = h->next, *slow = h->next;
 //	while (fast->next&&fast->next->next) {
 //		fast = fast->next->next;
 //		slow = slow->next;
@@ -54,7 +54,7 @@
 //	destory(s);//最后销毁栈
 //}
 //int main() {
-//	struct Link *head;
+//	Link *head;
 //	Link *createLink(int);
 //	head = createLink(1);
 //	isSymmetry(head);

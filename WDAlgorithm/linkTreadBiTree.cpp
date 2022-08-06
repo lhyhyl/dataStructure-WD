@@ -3,8 +3,8 @@
 */
 struct biTree {
 	char data;
-	struct biTree *lchild;
-	struct biTree *rchild;
+	biTree *lchild;
+	biTree *rchild;
 	int ltag, rtag;//用于进行标记
 };
 #include <stdio.h>

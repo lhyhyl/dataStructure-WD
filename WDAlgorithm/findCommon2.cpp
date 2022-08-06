@@ -5,12 +5,12 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //
 //#include <stdio.h>
 //void listCommon(Link *a,Link *b) {
-//	struct Link  *pA = a->next, *pB = b->next,*r,*la=a;//用la指向a，便可直接链在a后面
+//	Link *pA = a->next, *pB = b->next,*r,*la=a;//用la指向a，便可直接链在a后面
 //	la->next = NULL;
 //	while (pA&&pB) {
 //		if (pA->data==pB->data) {
@@ -26,7 +26,7 @@
 //	la->next = NULL;
 //}
 //int main() {
-//	struct Link *a, *b;
+//	Link *a, *b;
 //	Link *createLink(int);
 //	void printfNowLink(Link *);
 //	a = createLink(0);

@@ -80,7 +80,7 @@
 //	}
 //	printf("%d ", getSum(G, prims));
 //	for (int i = 0; i < G->numV; i++) {
-//		printf("%c ", G->adjlist[prims[i]]);
+//		printf("%c ", G->adjlist[prims[i]].info);
 //	}
 //
 //}

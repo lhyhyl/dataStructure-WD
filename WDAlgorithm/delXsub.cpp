@@ -5,8 +5,8 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
@@ -20,7 +20,7 @@
 //
 //}
 //void delXsub(biTree *T, int x) {
-//	struct biTree *p = T;//这里设置一个父节点指针，因为free只会释放所在节点里面的内容，并不会置空
+//	biTree *p = T;//这里设置一个父节点指针，因为free只会释放所在节点里面的内容，并不会置空
 //	if (p->lchild && p->lchild->data == x) {
 //		del(p->lchild);//删除该子树
 //		p->lchild = NULL;//节点置为空

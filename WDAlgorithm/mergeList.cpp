@@ -6,12 +6,12 @@
 //*/
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#include <stdio.h>
 //
 //void merge(Link *ha,Link *hb) {
-//	struct Link *l = ha, *pa = ha->next, *pb = hb->next, *ra, *rb;
+//	Link *l = ha, *pa = ha->next, *pb = hb->next, *ra, *rb;
 //	l->next = NULL;
 //	while (pa&&pb) {
 //		if (pa->data<pb->data) {
@@ -41,7 +41,7 @@
 //	}
 //}
 //int main() {
-//	struct Link *ha,*hb;
+//	Link *ha,*hb;
 //	Link *createLink(int);
 //	void printfNowLink(Link *);
 //	ha = createLink(0);

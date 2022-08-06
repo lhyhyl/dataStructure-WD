@@ -7,7 +7,7 @@
 //#include <stdlib.h>
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //void simpleSort(Link *l) {//简单排序，每次选择一个最小的排在前面
 //	Link *p, *pre, *m, *preM;
@@ -34,7 +34,7 @@
 //	}
 //}
 //int main() {
-//	struct Link *l;
+//	Link *l;
 //	Link* createLink(int);
 //	l = createLink(0);
 //	simpleSort(l);

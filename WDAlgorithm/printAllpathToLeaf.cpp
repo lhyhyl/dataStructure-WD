@@ -4,8 +4,8 @@
 //*/
 //struct biTree {//树的结构体
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //
 //#include <stdio.h>

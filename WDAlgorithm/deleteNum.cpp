@@ -5,13 +5,13 @@
 //*/
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //#include <stdlib.h>
 //void deleteNum(Link *h,int min,int max) {
-//	struct Link *pre = h, *p = h->next, *r;
+//	Link *pre = h, *p = h->next, *r;
 //	while (p) {
 //		if (p->data>min&&p->data<max) {//符合条件，进行删除
 //			r = p->next;
@@ -27,7 +27,7 @@
 //}
 ////int main() {
 ////	int min, max;
-////	struct Link*head;
+////	Link*head;
 ////	Link *createLink(int);//创建链表的代码我单独封装了一个文件
 ////	void printfNowLink(Link*);
 ////	head = createLink(0);

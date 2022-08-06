@@ -22,7 +22,7 @@
 //}ALGraph;
 //struct Tree {
 //	char data;
-//	struct Tree *lchild, *rchild;
+//	Tree *lchild, *rchild;
 //};
 //void outPut(ALGraph *G, int **weights) {//输出最小生成树
 //	for (int i = 0; i < G->numV; i++) {

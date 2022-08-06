@@ -6,7 +6,7 @@
 
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
@@ -14,7 +14,7 @@
 //void bubbleSort(Link *h) {//冒泡排序
 //	int flag = 0;//排序标志，产生过变动就置为1
 //	int count = 0;//记录链表长度
-//	struct Link *pre=h, *p = h->next,*r;
+//	Link *pre=h, *p = h->next,*r;
 //	while (p) {
 //		count++;
 //		p = p->next;
@@ -43,7 +43,7 @@
 //}
 //int main() {
 //	Link* createLink(int);
-//	struct Link *head;
+//	Link *head;
 //	head = createLink(0);
 //	bubbleSort(head);
 //	printf("排序后链表值为：");

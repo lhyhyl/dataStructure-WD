@@ -9,11 +9,11 @@
 //	union {
 //		int data;
 //	}type;
-//	struct Link *next;
+//	Link *next;
 //};
 //#include <stdio.h>
 //Link *isLoop(Link *h) {
-//	struct Link *fast = h, *slow = h;
+//	Link *fast = h, *slow = h;
 //	while (slow&&fast&&fast->next) {
 //		slow = slow->next;
 //		fast = fast->next->next;
@@ -32,7 +32,7 @@
 //	return fast;
 //}
 //int main() {
-//	struct Link *head,*l,*s;
+//	Link *head,*l,*s;
 //	int count = 0;
 //	Link *createLink(int);
 //	head = createLink(0);

@@ -3,15 +3,15 @@
 #include <stdio.h>
 struct Link {
 	int data;
-	struct Link *next;
-	struct Link *pre;
+	Link *next;
+	Link *pre;
 };
 Link *createDouLoopLink() {
 	int n, data;
 	Link *head = (Link *)malloc(sizeof(Link));
 	head->next = NULL;
 	head->pre = NULL;
-	struct Link *p = head;
+	Link *p = head;
 	printf("请输入节点个数：n=");
 	scanf("%d", &n);
 	for (int i = 0; i < n; i++) {

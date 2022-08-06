@@ -1,6 +1,6 @@
 struct Link {
 	int data;
-	struct Link *next;
+	Link *next;
 };
 #include <stdio.h>
 void printfNowLink(Link *head) {

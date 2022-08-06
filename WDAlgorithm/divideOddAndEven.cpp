@@ -6,13 +6,13 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
 //void divide(Link *lb,Link *la) {
 //	int flag = 0;//做奇偶判定，因为奇数之后一定是偶数，偶数之后一定是奇数
-//	struct Link *l=la, *p = la->next,*rb=lb,*ra=l;
+//	Link *l=la, *p = la->next,*rb=lb,*ra=l;
 //	l->next = NULL;//原链表头结点置空
 //	while (p) {//要使其顺序不变，采用尾插法
 //		if (!flag) {
@@ -31,7 +31,7 @@
 //	rb->next = NULL;
 //}
 //int main() {
-//	struct Link *head;
+//	Link *head;
 //	Link *createLink(int);
 //	void printfNowLink(Link *);
 //	head = createLink(0);

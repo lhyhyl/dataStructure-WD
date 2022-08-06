@@ -8,12 +8,12 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //int findTheReciprocalK(Link *h,int k) {//这是第一种解法
-//	struct Link *p = h->next;
+//	Link *p = h->next;
 //	int count = 0,num;
 //	while (p) {//统计元素个数
 //		count++;
@@ -33,7 +33,7 @@
 //	}
 //}
 //int findTheReciprocalK2(Link *h,int k) {//这是第二种解法
-//	struct Link *p = h->next, *q = h->next;
+//	Link *p = h->next, *q = h->next;
 //	int count = k;
 //	while (count--) {
 //		if (q==NULL) {
@@ -51,7 +51,7 @@
 //}
 //int main() {
 //	int k;
-//	struct Link *head;
+//	Link *head;
 //	Link *createLink(int);
 //	head = createLink(0);
 //	printf("请输入要查倒数第几个数：k=");

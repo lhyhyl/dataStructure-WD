@@ -26,10 +26,10 @@
 ////链队
 //struct Link {
 //	int node;//我们进行广度优先时会用到，将顶点序号入队
-//	struct Link *next;
+//	Link *next;
 //};
 //struct LinkQueue {
-//	struct Link *front, *rear;
+//	Link *front, *rear;
 //};
 //
 //void DFS(ALGraph *G, int vi, int vj, int *visited, int &flag) {

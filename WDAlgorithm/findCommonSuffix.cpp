@@ -18,7 +18,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //Link *findCommonSuffix(Link *h1,Link *h2) {
-//	struct Link *p = h1->next, *q = h2->next;
+//	Link *p = h1->next, *q = h2->next;
 //	int countP =0, countQ = 0,gap;
 //	while (p) {//遍历，获取链表长度
 //		countP++;
@@ -47,7 +47,7 @@
 //	
 //}
 //int main() {
-//	struct Link *h1,*h2,*com,*p1,*p2,*start;
+//	Link *h1,*h2,*com,*p1,*p2,*start;
 //	Link *createLink(int);
 //	char p[] = "letter";//数据类型，char
 //	h1 = createLink(1);

@@ -5,14 +5,14 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //
 //};
 //
 //#include <stdio.h>
 //
 //void subList(Link *a,Link *b) {
-//	struct Link *la = a ,*pA = la->next, *pB = b->next;
+//	Link *la = a ,*pA = la->next, *pB = b->next;
 //	while (pA&&pB) {
 //		if (pA->data==pB->data) {//相等继续对比下一个
 //			pA = pA->next;
@@ -28,7 +28,7 @@
 //	
 //}
 //int main() {
-//	struct Link *a, *b;
+//	Link *a, *b;
 //	Link *createLink(int);
 //	a = createLink(0);
 //	b = createLink(0);

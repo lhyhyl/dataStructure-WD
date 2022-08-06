@@ -6,13 +6,13 @@
 //struct Link {
 //
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //#include <stdlib.h>
 //void deleteX(Link *&p,int delNum) {
-//	struct Link* q;//这是递归方法
+//	Link* q;//这是递归方法
 //	if (p == NULL) return;
 //	if (p->data==delNum) {
 //		q = p;
@@ -24,7 +24,7 @@
 //		deleteX(p->next, delNum);
 //	}
 //	//不采取递归，直接遍历
-//	//struct Link *pre = p, *q = p->next,*r;
+//	//Link *pre = p, *q = p->next,*r;
 //	//while (q) {
 //	//	if (q->data==delNum) {
 //	//		r = q;//r指向待删除节点

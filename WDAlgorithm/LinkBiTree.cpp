@@ -5,8 +5,8 @@
 #define TYPE char
 struct biTree {
 	TYPE data;
-	struct biTree *lchild;
-	struct biTree *rchild;
+	biTree *lchild;
+	biTree *rchild;
 	int ltag, rtag;
 };
 #include <stdio.h>

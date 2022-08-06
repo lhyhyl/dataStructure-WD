@@ -10,7 +10,7 @@
 //	union {
 //		int data;
 //	}type;
-//	struct Link *next;
+//	Link *next;
 //};
 //#include <stdlib.h>
 //#include <stdio.h>
@@ -20,7 +20,7 @@
 //	for (int i = 0; i < n;i++) {//赋初值0
 //		*(arr + i) = 0;
 //	}
-//	struct Link *pre = h, *p = h->next, *r;
+//	Link *pre = h, *p = h->next, *r;
 //	while (p) {
 //		if (*(arr+abs(p->type.data))==0) {//首次访问，作上记录
 //			*(arr + abs(p->type.data)) = 1;
@@ -36,7 +36,7 @@
 //	}
 //}
 //int main() {
-//	struct Link *head,*p;
+//	Link *head,*p;
 //	int n = 100;//我们这里默许创建的链表里的节点值的绝对值<=100
 //	Link *createLink(int);
 //	head = createLink(0);//0代表我要创建的链表值类型为int

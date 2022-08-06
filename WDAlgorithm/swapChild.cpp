@@ -5,13 +5,13 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
 //void swapTree(biTree *T) {//其本质就是从叶子节点开始进行交换，一路推进到根节点
-//	struct biTree *p = T,*t;
+//	biTree *p = T,*t;
 //	if (!p) return;
 //	if (!p->lchild&&!p->rchild) {//如果没有左右孩子，就不需要交换了，直接返回
 //		return;

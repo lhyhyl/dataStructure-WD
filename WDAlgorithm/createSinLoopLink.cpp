@@ -3,7 +3,7 @@
 #include <stdio.h>
 struct Link {
 	int data;
-	struct Link *next;
+	Link *next;
 };
 Link *createSinLoopLink() {
 	int n, data;

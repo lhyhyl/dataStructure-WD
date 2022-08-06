@@ -6,7 +6,7 @@
 //		如果是右括号则取出栈顶元素，比对是否配对，如果不匹配，终止，匹配则继续。
 //*/
 //struct LinkQueue {
-//	struct Link *front, *rear;
+//	Link *front, *rear;
 //};
 //struct Stack
 //{
