@@ -9,8 +9,8 @@
 //*/
 //struct Link {
 //	int data;
-//	struct Link *pre;
-//	struct Link *next;
+//	Link *pre;
+//	Link *next;
 //	int freq;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
@@ -18,7 +18,7 @@
 //#include <stdlib.h>
 //void locate(Link *h,int num) {
 //	int flag = 0;//找到标志
-//	struct Link *pre=h, *p = h->next, *t,*preQ=h,*q;
+//	Link *pre=h, *p = h->next, *t,*preQ=h,*q;
 //	while (p) {
 //		if (p->data==num) {//如果找到
 //			flag = 1;//表示找到
@@ -54,16 +54,16 @@
 //}
 //int main() {
 //	int n, data,num;
-//	 Link *head = ( Link *)malloc(sizeof( Link));
+//	Link *head = ( Link *)malloc(sizeof(Link));
 //	head->next = NULL;
 //	head->pre = NULL;
-//	struct Link *p = head;
+//	Link *p = head;
 //	printf("请输入节点个数：n=");
 //	scanf("%d", &n);
 //	for (int i = 0; i < n; i++) {
 //		printf("请输入第%d个节点值:", i + 1);
 //		scanf("%d", &data);
-//		 Link *newP = ( Link*)malloc(sizeof( Link));
+//		Link *newP = ( Link*)malloc(sizeof( Link));
 //		newP->data = data;
 //		newP->pre = p;
 //		newP->freq = 0;

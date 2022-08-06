@@ -6,13 +6,13 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //
 //#include <stdio.h>
 //#include <stdlib.h>
 //void deleteRep(Link *h) {
-//	struct Link *pre = h, *p = h->next, *r;//删除节点必备三剑客
+//	Link *pre = h, *p = h->next, *r;//删除节点必备三剑客
 //	while (p->next) {
 //		if (p->data==p->next->data) {//当前节点与后续节点值相同，则删除并释放空间
 //			r = p->next;//必须先保存后续节点，防止断链
@@ -26,7 +26,7 @@
 //	}
 //}
 //int main() {
-//	struct Link * head;
+//	Link * head;
 //	Link *createLink(int);
 //	void printfNowLink(Link *);
 //	head = createLink(0);

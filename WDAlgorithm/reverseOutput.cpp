@@ -5,7 +5,7 @@
 //*/
 //struct Link {
 //	int data;
-//	struct Link* next;
+//	Link* next;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>

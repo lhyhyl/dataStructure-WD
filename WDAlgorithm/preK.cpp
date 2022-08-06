@@ -5,8 +5,8 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
@@ -31,7 +31,7 @@
 //	T->lchild = NULL;
 //	T->rchild = NULL;
 //	T->data = NULL;
-//	struct biTree *r;
+//	biTree *r;
 //	biTree *create(biTree *);
 //	void inOrder(biTree *);
 //	void nodeNum(biTree *, int *);

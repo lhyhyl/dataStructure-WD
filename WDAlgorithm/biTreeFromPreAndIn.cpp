@@ -9,8 +9,8 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -40,7 +40,7 @@
 //int main() {
 //	char arrIn[] = { 'D','B','E','A','F','C','G' }, 
 //		arrPre[] = {'A','B','D','E','C','F','G'};
-//	struct biTree *root;
+//	biTree *root;
 //	void inOrder(biTree *);
 //	void preOrder(biTree *);
 //	root = preInCreate(arrIn,arrPre,0,6,0,6);

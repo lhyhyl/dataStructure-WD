@@ -9,10 +9,10 @@
 //struct Link
 //{
 //	int value;
-//	struct Link *next;
+//	Link *next;
 //};
 //void deleteX(Link *&p, int delNum) {//这里的第一个函数参数必须是引用值，不然会导致断链
-//	struct Link *pre;//定义一个指针，进行删除
+//	Link *pre;//定义一个指针，进行删除
 //	if (p == NULL) return;
 //	if (p->value == delNum) {
 //		pre = p;
@@ -24,7 +24,7 @@
 //		deleteX(p->next, delNum);
 //}
 //Link *create() {
-//	struct Link *p, *rear, *head;
+//	Link *p, *rear, *head;
 //	head = (Link *)malloc(sizeof(Link));
 //	rear = (Link *)malloc(sizeof(Link));
 //	head = NULL;
@@ -50,7 +50,7 @@
 //	return head;
 //}
 //Link *create2() {
-//	struct Link *p, *rear, *head;
+//	Link *p, *rear, *head;
 //	head = (Link *)malloc(sizeof(Link));
 //	head = NULL;
 //	int value;
@@ -75,7 +75,7 @@
 //}
 //int main() {
 //	int delNum;
-//	struct Link *head, *q;
+//	Link *head, *q;
 //	head = create();
 //	q = head;
 //	printf("打印链表：");

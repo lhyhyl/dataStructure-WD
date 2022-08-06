@@ -8,12 +8,12 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#include <stdlib.h>
 //#include <stdio.h>
 //void linkCommon(Link *a, Link *b, Link *c ) {
-//	struct Link *lc = c,*la=a->next,*lb=b->next,*rc=lc;
+//	Link *lc = c,*la=a->next,*lb=b->next,*rc=lc;
 //	while (la) {
 //		while (lb) {
 //			if (la->data==lb->data) {//如果是公共元素

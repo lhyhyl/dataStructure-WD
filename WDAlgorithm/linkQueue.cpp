@@ -8,17 +8,17 @@
 //#define TYPE int
 struct biTree {//新增树节点
 	char data;
-	struct biTree *lchild;
-	struct biTree *rchild;
+	biTree *lchild;
+	biTree *rchild;
 
 };
 struct Link {
 	//TYPE data;
 	TYPE node;
-	struct Link *next;
+	Link *next;
 };
 struct LinkQueue {
-	struct Link *front, *rear;
+	Link *front, *rear;
 };
 #include <stdio.h>
 #include <stdlib.h>

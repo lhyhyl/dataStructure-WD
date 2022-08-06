@@ -3,8 +3,8 @@
 */
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //#include <stdio.h>
 //#include <stdlib.h>

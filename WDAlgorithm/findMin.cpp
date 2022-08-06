@@ -5,12 +5,12 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#include <stdlib.h>
 //#include <stdio.h>
 //void inputAndDeleteLink(Link *h) {
-//	struct Link *pre = h, *minPre = h, *p = h->next, *min = h->next, *r;
+//	Link *pre = h, *minPre = h, *p = h->next, *min = h->next, *r;
 //	while (h->next!=h) {//如果头结点后面还有值，说明未结束
 //		while (p!=h) {//寻找最小值
 //			if (min->data>p->data) {
@@ -32,7 +32,7 @@
 //	free(h);//最后释放头结点
 //}
 //int main() {
-//	struct Link *head;
+//	Link *head;
 //	Link *createSinLoopLink();
 //	head = createSinLoopLink();
 //	inputAndDeleteLink(head);

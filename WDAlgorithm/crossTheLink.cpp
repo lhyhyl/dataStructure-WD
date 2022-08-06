@@ -10,13 +10,13 @@
 //	union {
 //		int data;
 //	}type;
-//	struct Link *next;
+//	Link *next;
 //};
 //#include <stdlib.h>
 //#include <stdio.h>
 //void crossTheLink(Link *h) {
 //	void reverse(Link *);
-//	struct Link *fast = h->next, *slow = h->next,*mid;
+//	Link *fast = h->next, *slow = h->next,*mid;
 //	mid = (Link*)malloc(sizeof(Link));
 //	while (fast->next&&fast->next->next) {//寻找中间节点
 //		fast = fast->next->next;
@@ -37,7 +37,7 @@
 //	}
 //}
 //void reverse(Link *h) {//头插法逆置
-//	struct Link *p = h->next,*r;
+//	Link *p = h->next,*r;
 //	h->next = NULL;
 //	while (p) {
 //		r = p->next;
@@ -48,7 +48,7 @@
 //	
 //}
 //int main() {
-//	struct Link *head,*p;
+//	Link *head,*p;
 //	Link *createLink(int);
 //	head = createLink(0);
 //	crossTheLink(head);

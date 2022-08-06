@@ -5,8 +5,8 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //struct Stack {
 //	biTree *arr;
@@ -55,7 +55,7 @@
 //}
 //int main() {
 //	int count = 0, x;
-//	struct biTree *T = (struct biTree *)malloc(sizeof(struct biTree));
+//	biTree *T = (biTree *)malloc(sizeof(struct biTree));
 //	struct Stack *s;
 //
 //	biTree *create(biTree *);

@@ -5,12 +5,12 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //
 //};
 //struct LinkQueue {//上次求高度采用的是顺序队列，这次采用链式队列，雨露均沾哈哈
-//	struct Link *front, *rear;
+//	Link *front, *rear;
 //};
 //
 //#include <stdio.h>

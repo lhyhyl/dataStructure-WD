@@ -6,8 +6,8 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //struct Squeue {
 //	biTree *arr;

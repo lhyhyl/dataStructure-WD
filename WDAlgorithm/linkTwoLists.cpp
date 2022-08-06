@@ -6,12 +6,12 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
+//	Link *next;
 //};
 //#include <stdlib.h>
 //#include <stdio.h>
 //void linkTwoLists(Link *h1,Link *h2) {
-//	struct Link *p1 = h1->next, *p2 = h2->next;
+//	Link *p1 = h1->next, *p2 = h2->next;
 //	while (p1->next != h1) p1 = p1->next;//这里要去判断p1->next是否等于h1，进而判断出是否到达尾结点
 //	p1->next = p2;
 //	while (p2->next != h2) p2 = p2->next;
@@ -19,7 +19,7 @@
 //	free(h2);//释放h2
 //}
 //int main() {
-//	struct Link *h1, *h2,*p;
+//	Link *h1, *h2,*p;
 //	Link *createSinLoopLink();
 //	h1 = createSinLoopLink();
 //	h2 = createSinLoopLink();

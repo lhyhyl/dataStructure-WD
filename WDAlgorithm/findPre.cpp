@@ -8,14 +8,14 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //	int ltag, rtag;
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
 //biTree *findPre(biTree *T,biTree *p) {//返回前驱结点
-//	struct biTree *f;
+//	biTree *f;
 //	if (p->rchild&&p->rtag==0) {//若该节点有右孩子，那么右子女是其前驱
 //		return p->rchild;
 //	}
@@ -36,13 +36,13 @@
 //	}
 //}
 //int main() {
-//	struct biTree *T = (struct biTree *)malloc(sizeof(struct biTree));
+//	biTree *T = (biTree *)malloc(sizeof(struct biTree));
 //	biTree *create(biTree *);
 //	T = create(T);
 //	void inThread(biTree *,biTree *);
 //	inThread(T,NULL);//中序遍历建立线索
 //
-//	struct biTree *p = T->rchild->lchild,*pre=NULL;//手动指定一个节点
+//	biTree *p = T->rchild->lchild,*pre=NULL;//手动指定一个节点
 //	pre=findPre(T,p);
 //	if (pre) {
 //		printf("节点p%c的前驱结点值为：%c",p->data,pre->data);

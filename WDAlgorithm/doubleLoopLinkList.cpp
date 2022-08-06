@@ -6,14 +6,14 @@
 */
 //struct Link {
 //	int data;
-//	struct Link *next;
-//	struct Link *pre;
+//	Link *next;
+//	Link *pre;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdlib.h>
 //#include <stdio.h>
 //void isSymmetry(Link *h) {
-//	struct Link *pre = h->pre,*next=h->next;
+//	Link *pre = h->pre,*next=h->next;
 //	while (pre!=next&&pre->pre!=next) {//此时存在两种情况，奇数个节点和偶数个节点都要考虑
 //		if (pre->data!=next->data) {
 //			printf("该循环双链表不对称");
@@ -29,7 +29,7 @@
 //	}
 //}
 //int main() {
-//	struct Link *head;
+//	Link *head;
 //	Link *createDouLoopLink();
 //	head = createDouLoopLink();
 //	isSymmetry(head);

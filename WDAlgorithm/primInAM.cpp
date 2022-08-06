@@ -5,7 +5,7 @@
 //#define MAXSIZE 100 //数组最大值
 //#include <stdio.h>
 //#include <stdlib.h>
-//typedef struct Graph {
+//typedef struct  {
 //	char Vertex[MAXSIZE];
 //	int Edge[MAXSIZE][MAXSIZE];
 //	int numV, numE;//顶点、边数量
@@ -30,9 +30,14 @@
 //	int min, k, index = 0;
 //	lowCost[start] = 0;//自己到自己的距离为0
 //	prims[index++] = start;
-//	for (int i = 0; i < G->numV; i++) {
-//		lowCost[i] = G->Edge[start][i];//把当前传入顶点的所有连接顶点的边的权值存入
+//	int m = 0;
+//	while (m<G->numV) {
+//		lowCost[m] = G->Edge[start][m];
+//		m++;
 //	}
+// //	for (int i = 0; i < G->numV; i++) {
+//	//	lowCost[i] = G->Edge[start][i];//把当前传入顶点的所有连接顶点的边的权值存入
+//	//}
 //	for (int i = 0; i < G->numV; i++) {//进行遍历，遍历一次加入一个顶点
 //		if (start == i)
 //			continue;
@@ -40,7 +45,7 @@
 //		for (int j = 0; j < G->numV; j++) {
 //			if (lowCost[j] != 0 && lowCost[j] < min) {//如果当前顶点未曾加入最小树中且小于目前最小值，更新
 //				min = lowCost[j];
-//				k = j;//记录位置
+//				k = j;//记录顶点信息
 //			}
 //
 //		}
@@ -54,7 +59,7 @@
 //				/*
 //					对于这里的理解，为什么要替换？然后为什么可以这样替换？
 //					首先回答第一个：因为普里姆算法是每次根据我们加入的点去寻找目前可纳入的最小边，
-//									所以我们没加入一个顶点都要进行判断，加入的顶点是否让某些顶点的
+//									所以我们每加入一个顶点都要进行判断，加入的顶点是否让某些顶点的
 //									可达距离变短
 //					第二个问题：    我们每次确定一个顶点，也就意味着一条边也确定了下来，所以此时新加入顶点
 //									到其余顶点的距离若小于之前的距离，则需要进行更换
@@ -75,9 +80,10 @@
 //int main() {
 //	void createGraphFromFile(adjMatrix *);
 //	void dispGraph(adjMatrix *G);
-//	adjMatrix *G = (adjMatrix *)malloc(sizeof(adjMatrix));
-//	createGraphFromFile(G);
-//	dispGraph(G);
-//	prim(G, 0);
+//	//adjMatrix *G=(adjMatrix*)malloc(sizeof(adjMatrix));
+//	adjMatrix G;
+//	createGraphFromFile(&G);
+//	dispGraph(&G);
+//	prim(&G, 0);
 //	return 0;
 //}
