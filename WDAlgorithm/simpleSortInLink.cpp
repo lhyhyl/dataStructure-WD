@@ -10,10 +10,10 @@
 //	Link *next;
 //};
 //void simpleSort(Link *l) {//简单排序，每次选择一个最小的排在前面
-//	Link *p, *pre, *m, *preM;
-//	while (l->next) {
-//		p = m = l->next, pre = preM = l;
-//		while (p) {
+//	Link* p, * pre, * m, * preM;
+//	while (l->next) {//如果还有节点，那么排序未完成
+//		p = m = l->next, pre = preM = l;//从首个未排序节点开始寻找最小值节点
+//		while (p) {//寻找最小值
 //			if (p->data < m->data) {
 //				preM = pre;
 //				m = p;
@@ -21,10 +21,10 @@
 //			pre = p;
 //			p = p->next;
 //		}
-//		if (m == l->next) {
+//		if (m == l->next) {//如果m未变说明最小值元素已在正确位置
 //			l = l->next;
 //		}
-//		else {
+//		else {//否则，移动该最小值元素到正确位置
 //			preM->next = m->next;
 //			m->next = l->next;
 //			l->next = m;
