@@ -276,7 +276,7 @@
     <ClCompile Include="findKth.cpp">
       <Filter>源文件\tree</Filter>
     </ClCompile>
-    <ClCompile Include="CreateGraphInAM.cpp">
+    <ClCompile Include="createGraphInAM.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
     <ClCompile Include="createGraphInAL.cpp">
@@ -413,6 +413,9 @@
     </ClCompile>
     <ClCompile Include="haffumanTree.cpp">
       <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="topoLogicalSort2.cpp">
+      <Filter>源文件\graph</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -9,10 +9,12 @@
 //	biTree *lchild;
 //	biTree *rchild;
 //};
-//extern struct Squeue{};
+//struct Squeue{
+//	biTree** arr;
+//	int front, rear;
+//};
 //#include <stdio.h>
 //#include <stdlib.h>
-////#include "createSequentialQueue.cpp"
 //void levelOrder(biTree *T,Squeue *sq,int maxSize) {
 //	biTree *p = T;//工作指针
 //	biTree *r = ( biTree *)malloc(sizeof( biTree));//暂存指针

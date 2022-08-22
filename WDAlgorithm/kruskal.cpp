@@ -36,7 +36,7 @@
 //int findAnster(int *fa, int i) {
 //	if (fa[i] == i)return i;//找到返回
 //	else {
-//		fa[i] = findAnster(fa, fa[i]);//进行路径压缩,即将i处
+//		fa[i] = findAnster(fa, fa[i]);//进行路径压缩,即将i处祖先设置为最顶层祖先
 //		return fa[i];//未找到继续
 //	}
 //}

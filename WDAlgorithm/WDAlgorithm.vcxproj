@@ -139,7 +139,7 @@
     <ClCompile Include="comTree.cpp" />
     <ClCompile Include="createDouLoopLink.cpp" />
     <ClCompile Include="createGraphInAL.cpp" />
-    <ClCompile Include="CreateGraphInAM.cpp" />
+    <ClCompile Include="createGraphInAM.cpp" />
     <ClCompile Include="DijkstraAL.cpp" />
     <ClCompile Include="DijkstraAM.cpp" />
     <ClCompile Include="directInsertSort.cpp" />
@@ -249,6 +249,7 @@
     <ClCompile Include="tagQueue.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="TopologicalSort.cpp" />
+    <ClCompile Include="topoLogicalSort2.cpp" />
     <ClCompile Include="trainArrange.cpp" />
     <ClCompile Include="traverseTree.cpp" />
     <ClCompile Include="WPL.cpp" />

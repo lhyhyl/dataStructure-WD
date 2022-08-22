@@ -74,7 +74,9 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 	char numV[3] = { 0 };//顶点，边个数信息
 	char arc[10] = { 0 };//边信息
 	char *vertex;//顶点信息，名称
-	fp = fopen("primTest.txt", "r");//打开文件
+	//fp = fopen("graphAL.txt", "r");//打开文件
+	//fp = fopen("primTest.txt", "r");//打开文件
+	fp = fopen("topo.txt", "r");//打开文件
 	if (fp == NULL) {
 		printf("该文件无法打开！");
 		return;
@@ -116,11 +118,11 @@ void createGraphInFile(ALGraph *G) {//从文件中读取我们的图的数据，包括边数，节点
 			G->adjlist[atoi(start) - 1].firstEdge = e;
 			
 			//下面与上面相似，目的在于构建无向图
-			EdgeNode *otherE = (EdgeNode *)malloc(sizeof( EdgeNode ));
-			otherE->index = atoi(start) - 1;//数组下标要减一
-			otherE->weight = atoi(weight);
-			otherE->next = G->adjlist[atoi(end) - 1].firstEdge;
-			G->adjlist[atoi(end) - 1].firstEdge = otherE;
+			//EdgeNode *otherE = (EdgeNode *)malloc(sizeof( EdgeNode ));
+			//otherE->index = atoi(start) - 1;//数组下标要减一
+			//otherE->weight = atoi(weight);
+			//otherE->next = G->adjlist[atoi(end) - 1].firstEdge;
+			//G->adjlist[atoi(end) - 1].firstEdge = otherE;
 		}
 
 	}

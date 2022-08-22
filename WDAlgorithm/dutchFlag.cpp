@@ -14,21 +14,23 @@
 //	a = b;
 //	b = tmp;
 //}
-//void subQuick(int *arr, int len) {
-//	int left = 0, cur = 0, right = len-1;
+//void dutchFlag(int *arr, int len) {
+//	int cur = 0, left = 0, right = len-1;
 //	while (cur <= right) {
-//		if (arr[cur] == 2) {//等于2时放到最后，即与right交换
-//			swap(arr[cur], arr[right--]);
-//		}
-//		else if (arr[cur] == 0) {//等于0时放到最前，即与left交换
+//		if (arr[cur] < 1)
 //			swap(arr[cur++], arr[left++]);
-//		}
+//
+//		else if (arr[cur] == 1)
+//			cur++;
+//
 //		else
-//			cur++;//等于1时不交换，直接下一个
+//			swap(arr[cur], arr[right--]);
+//
+//
 //	}
 //}
 //int main() {
 //	int arr[] = { 0,2,1,2,1,2,1 };
-//	subQuick(arr, 7);
+//	dutchFlag(arr, 7);
 //	return 0;
 //}
