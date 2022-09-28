@@ -41,39 +41,17 @@
 //}
 //
 //int main() {
-//	//创建节点
-//	Link *head = (Link*)malloc(sizeof(Link));
-//	Link *q = (Link*)malloc(sizeof(Link));
-//	q = head;
-//	head->next = NULL;
-//	int n,data,delNum;
-//	printf("请输入节点个数：");
-//	scanf("%d",&n);
-//	for (int i = 0; i < n;i++) {
-//		printf("请输入第%d个节点值：",i+1);
-//		Link *p = (Link*)malloc(sizeof(Link));
-//		scanf("%d",&data);
-//		p->data = data;
-//		head->next = p;
-//		head = p;
-//	
-//	}
-//	head->next = NULL;//这里要将指针的next指向NULL，不然后面的判断会出问题，而且这也是应该养成的好习惯
-//	head = q;//head回到头结点
-//	printf("当前链表值为：");
-//	while (head->next) {
-//		printf("%d ",head->next->data);
-//		head = head->next;
-//	}
+//	//创建链表
+//	Link* head = (Link*)malloc(sizeof(Link));
+//	Link* createLink(int);
+//	void printfNowLink(Link * );
+//	head = createLink(0);
+//	int n, data, delNum;
+//	printfNowLink(head);
 //	printf("\n");
 //	printf("请输入要删除的值：");
 //	scanf("%d",&delNum);
-//	head = q;//head回到头结点
 //	deleteX(head,delNum);
-//	printf("删除后链表值为：");
-//	while (head->next) {
-//		printf("%d ", head->next->data);
-//		head = head->next;
-//	}
+//	printfNowLink(head);
 //	return 0;
 //}

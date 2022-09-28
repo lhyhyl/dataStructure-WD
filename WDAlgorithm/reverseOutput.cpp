@@ -20,23 +20,10 @@
 //}
 //int main() {
 //	int n,data;
-//	printf("请输入创建链表的节点个数：");
-//	scanf("%d",&n);
-//	Link *q;
-//	Link *head =(Link*) malloc(sizeof(Link));
-//	head->next = NULL;
-//	q = head;
-//	for (int i = 0; i < n;i++) {
-//		Link *newP = (Link*) malloc(sizeof(Link));
-//		printf("请输入第一个节点的值：");
-//		scanf("%d",&data);
-//		newP->data = data;
-//		newP->next = NULL;
-//		head->next = newP;
-//		head = head->next;//head要始终指向最新节点
-//	}
-//	head->next = NULL;
-//	head = q;//最后head要指向头结点
+//	//创建链表
+//	Link* head = (Link*)malloc(sizeof(Link));
+//	Link* createLink(int);
+//	head = createLink(0);
 //	reverseOutput(head->next);
 //	return 0;
 //}

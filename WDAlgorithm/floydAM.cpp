@@ -6,12 +6,12 @@
 //#define MAXSIZE 100
 //#include <stdio.h>
 //#include <stdlib.h>
-//typedef struct Graph {
+//struct AMGraph {
 //	int Vertex[MAXSIZE];
 //	int Edge[MAXSIZE][MAXSIZE];
 //	int numV, numE;//¶¥µã¡¢±ßÊýÁ¿
-//}adjMatrix;
-//void floyd(adjMatrix* G, int path[][MAXSIZE]) {
+//};
+//void floyd(AMGraph* G, int path[][MAXSIZE]) {
 //	int i, j, k;
 //	int dist[MAXSIZE][MAXSIZE];
 //	for (int m = 0; m < G->numV; m++) {
@@ -56,9 +56,9 @@
 //	}
 //}
 //int main() {
-//	void createGraphFromFile(adjMatrix*);
-//	void dispGraph(adjMatrix*);
-//	adjMatrix* G = (adjMatrix*)malloc(sizeof(adjMatrix));
+//	void createGraphFromFile(AMGraph*);
+//	void dispGraph(AMGraph*);
+//	AMGraph* G = (AMGraph*)malloc(sizeof(AMGraph));
 //	createGraphFromFile(G);
 //	dispGraph(G);
 //	int path[MAXSIZE][MAXSIZE];

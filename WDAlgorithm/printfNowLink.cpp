@@ -4,7 +4,7 @@ struct Link {
 };
 #include <stdio.h>
 void printfNowLink(Link *head) {
-	printf("操作后链表值为：");
+	printf("链表值为：");
 	while (head->next) {
 		printf("%d ", head->next->data);
 		head = head->next;
